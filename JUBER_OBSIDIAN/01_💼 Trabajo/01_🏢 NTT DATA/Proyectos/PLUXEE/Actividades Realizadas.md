@@ -1,0 +1,1 @@
+-Se migro de net 7 a net 98 tener siempre en consideración que se debe cambiar todas las bibliotecas conectadas a net 8 tambien

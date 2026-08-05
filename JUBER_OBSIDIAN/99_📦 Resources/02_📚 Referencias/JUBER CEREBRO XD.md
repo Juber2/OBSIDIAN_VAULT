@@ -1,0 +1,4 @@
+[[ESTUDIO]]
+[[PROYECTOS]]
+[[Plantillas]]
+[[Obsidian]]

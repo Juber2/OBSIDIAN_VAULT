@@ -1,0 +1,12 @@
+{
+  "promptDelete": false,
+  "foldHeading": true,
+  "rightToLeft": false,
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "foldIndent": false,
+  "spellcheck": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./Imagenes",
+  "alwaysUpdateLinks": true
+}
