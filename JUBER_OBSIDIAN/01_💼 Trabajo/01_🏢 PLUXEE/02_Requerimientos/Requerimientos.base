@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.hasProperty("estado")
+views:
+  - type: table
+    name: Todos
+    order:
+      - file.name
+      - estado
+      - ticket
+      - prioridad
+      - fecha_actualizacion

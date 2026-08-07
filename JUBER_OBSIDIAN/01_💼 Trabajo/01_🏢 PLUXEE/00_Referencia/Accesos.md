@@ -4,6 +4,7 @@ link jamper: https://portal.azure.com/#@pluxeegroup.onmicrosoft.com/resource/sub
 ## Jamper
 usuario: _juber.gutierrez.ext@pluxeegroup.com
 clave: la misma
-## Acceso a servidor uat dentro del jumper:
+## Acceso a servidor UAT dentro del jumper:
+
 ip: 10.245.66.76
 clave: la misma que guion bajo

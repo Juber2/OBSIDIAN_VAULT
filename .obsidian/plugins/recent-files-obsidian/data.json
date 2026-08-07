@@ -1,24 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Numero tarjeta cambiar a codigo seguimiento",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Numero tarjeta cambiar a codigo seguimiento.md"
+      "basename": "RQ-2026-08-direcciones-grupos-log",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md"
+    },
+    {
+      "basename": "Requerimientos",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base"
+    },
+    {
+      "basename": "Diario",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md"
+    },
+    {
+      "basename": "_Plantilla",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md"
+    },
+    {
+      "basename": "Links",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md"
+    },
+    {
+      "basename": "Accesos",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos.md"
+    },
+    {
+      "basename": "PLUXEE",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md"
+    },
+    {
+      "basename": "RQ-2026-08-tarjeta-codigo-seguimiento",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-tarjeta-codigo-seguimiento.md"
+    },
+    {
+      "basename": "RQ-2026-08-mascara-telefono",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-mascara-telefono.md"
+    },
+    {
+      "basename": "PROPIO",
+      "path": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md"
     },
     {
       "basename": "12 - Checklist de Progreso",
       "path": "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/12 - Checklist de Progreso.md"
-    },
-    {
-      "basename": "Actividades diarias",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Actividades diarias.md"
-    },
-    {
-      "basename": "Sin título",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Sin título.base"
-    },
-    {
-      "basename": "UAT",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Accesos/UAT.md"
     },
     {
       "basename": "05 - Módulo Employee",
@@ -51,10 +75,6 @@
     {
       "basename": "Chat bot whatsapp",
       "path": "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/Chat bot whatsapp.md"
-    },
-    {
-      "basename": "Links pluxee",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Links/Links pluxee.md"
     },
     {
       "basename": "README",
@@ -115,10 +135,6 @@
     {
       "basename": "App friendCash",
       "path": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/App friendCash.md"
-    },
-    {
-      "basename": "PROPIO",
-      "path": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md"
     },
     {
       "basename": "Regla de negocio - Plantillas de cursos",
@@ -183,22 +199,6 @@
     {
       "basename": "TE_Tema1_Vigilancia_Madurez_Tecnologica",
       "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Tema1_Vigilancia_Madurez_Tecnologica.md"
-    },
-    {
-      "basename": "CIBERTEC",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/CIBERTEC.md"
-    },
-    {
-      "basename": "ADR-004 - Versionado de Cursos y Evaluaciones",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/01_🏗️ Arquitectura/01_ADRs/ADR-004 - Versionado de Cursos y Evaluaciones.md"
-    },
-    {
-      "basename": "Contexto del Proyecto",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/00_📌 Proyecto/Contexto del Proyecto.md"
-    },
-    {
-      "basename": "11 - Cronograma Solo (18 meses)",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/11 - Cronograma Solo (18 meses).md"
     }
   ],
   "omittedPaths": [],
