@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "08 - ADR y Tradeoffs",
+      "path": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/08 - ADR y Tradeoffs.md"
+    },
+    {
+      "basename": "07 - Modular Monolith",
+      "path": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/07 - Modular Monolith.md"
+    },
+    {
+      "basename": "06 - CQRS en Java",
+      "path": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/06 - CQRS en Java.md"
+    },
+    {
+      "basename": "02 - Clean Architecture en Java",
+      "path": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/02 - Clean Architecture en Java.md"
+    },
+    {
+      "basename": "01 - Capas y Responsabilidades",
+      "path": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/01 - Capas y Responsabilidades.md"
+    },
+    {
+      "basename": "Claude_Usage",
+      "path": "JUBER_OBSIDIAN/03_🤖 Claude Usage/Claude_Usage.md"
+    },
+    {
       "basename": "RQ-2026-08-direcciones-grupos-log",
       "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "EIT_Proyecto_ServiChamba_Presentacion",
       "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/EIT_Proyecto_ServiChamba_Presentacion.md"
-    },
-    {
-      "basename": "Estrategias_Innovacion_Tecnologica",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/Estrategias_Innovacion_Tecnologica.md"
-    },
-    {
-      "basename": "TE_Practica_Caso04_GlobalFutureGroup",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Practica_Caso04_GlobalFutureGroup.md"
-    },
-    {
-      "basename": "TE_Practica_Caso01_MedicareGlobal",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Practica_Caso01_MedicareGlobal.md"
-    },
-    {
-      "basename": "Tecnologias_Emergentes",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/Tecnologias_Emergentes.md"
-    },
-    {
-      "basename": "TE_Tema3_IA_Generativa_MLOps",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Tema3_IA_Generativa_MLOps.md"
-    },
-    {
-      "basename": "TE_Tema1_Vigilancia_Madurez_Tecnologica",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Tema1_Vigilancia_Madurez_Tecnologica.md"
     }
   ],
   "omittedPaths": [],

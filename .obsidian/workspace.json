@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
+                "file": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/08 - ADR y Tradeoffs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RQ-2026-08-direcciones-grupos-log"
+              "title": "08 - ADR y Tradeoffs"
+            }
+          },
+          {
+            "id": "9105444f48d95a9e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.13.6"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,43 +214,44 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7260191c56604d48",
+  "active": "9105444f48d95a9e",
   "lastOpenFiles": [
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/07 - Modular Monolith.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/06 - CQRS en Java.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/02 - Clean Architecture en Java.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/01 - Capas y Responsabilidades.md",
+    "JUBER_OBSIDIAN/03_🤖 Claude Usage/Claude_Usage.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/02 - Pods Deployments y ReplicaSets.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/02 - Pods Deployments y ReplicaSets.md.tmp.44272.b3b6104c0502",
+    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/01 - Fundamentos y Arquitectura.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/KUBERNETES.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/KUBERNETES.md.tmp.44272.bfe4cc1f6838",
+    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/GitHub Actions CI CD.md.tmp.44272.3b98484bca9a",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/06 - Reusable Workflows y Composite Actions.md",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/06 - Reusable Workflows y Composite Actions.md.tmp.44272.9286a5005af2",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/05 - Deploy con GitHub Actions.md.tmp.44272.ccf7b6aa2839",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/04 - Secrets Variables y Environments.md.tmp.44272.ee86209c20d4",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/03 - CI Basico Build Test Lint.md.tmp.44272.16360129fa93",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/02 - Workflows Jobs Steps Actions.md.tmp.44272.d5fbfd1faf8e",
+    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/01 - Fundamentos GitHub Actions.md.tmp.44272.852c492e7ae2",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
+    "JUBER_OBSIDIAN/03_🤖 Claude Usage/Control_Semanal.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/01_Links.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md.tmp.44840.0399739ec84d",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Accesos/UAT.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-tarjeta-codigo-seguimiento.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-mascara-telefono.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base.tmp.44840.e30f7e18c6de",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base.tmp.44840.86cc0d6f551b",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md.tmp.44840.882c262e31ab",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md.tmp.44840.fda8215d8a5e",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base.tmp.44840.bf03bbb2c60f",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-mascara-telefono.md.tmp.44840.59a532aed0d2",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md.tmp.44840.6f107d649216",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Backlog.md",
     "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Actividades diarias.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Numero tarjeta cambiar a codigo seguimiento.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/12 - Checklist de Progreso.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Accesos/UAT.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/05 - Módulo Employee.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/04 - Módulo Company.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/03 - Módulo SuperAdmin.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/02 - Supuestos y Metodología.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/01 - Resumen Ejecutivo.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/00 - Índice.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/Sebastian - Apolo.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/Chat bot whatsapp.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Links/Links pluxee.md",
     "JUBER_OBSIDIAN/02_📚 Estudio/06_🎓 Cursos/01_📚 DevTalles/ARCHIVOS/gitRecomendaciones.png",
     "JUBER_OBSIDIAN/02_📚 Estudio/06_🎓 Cursos/01_📚 DevTalles/ARCHIVOS/gitHubImage.jpg",
     "JUBER_OBSIDIAN/02_📚 Estudio/05_🏗️ Arquitectura/05_📚 General/Imagenes/1742435149294.gif",
