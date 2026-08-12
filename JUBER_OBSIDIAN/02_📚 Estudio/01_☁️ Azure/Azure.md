@@ -13,12 +13,16 @@ Relacionado:
 
 | Orden | Seccion | Ruta |
 |---|---|---|
-| 1 | AZ-204 | `01_🎯 AZ-204/` |
-| 2 | Conceptos | `02_📘 Conceptos/` |
-| 3 | Laboratorios | `03_🧪 Laboratorios/` |
+| 1 | AZ-204 | `01_🎯 AZ-204/` (sin empezar) |
+| 2 | Conceptos | [[02_📘 Conceptos/Conceptos|Conceptos]] — PaaS/IaaS/Cloud Native, AKS, App Service, Functions |
+| 3 | Laboratorios | `03_🧪 Laboratorios/` (sin empezar) |
 
 ## Checklist
 
 - [ ] Organizar ruta AZ-204.
-- [ ] Documentar conceptos cloud importantes.
+- [x] Documentar conceptos cloud importantes (PaaS/IaaS/Cloud Native, AKS, App Service/Functions).
 - [ ] Crear laboratorios practicos.
+- [x] Cubrir deseables: APIM, Application Gateway, Data Factory, Data Warehouse, SRE/APM/IaC.
+
+## Relacionado
+[[Postulacion|Senior Java Developer - Coforge/BCP]] — este módulo cubre el requisito indispensable de Cloud Native/AKS.

@@ -30,6 +30,7 @@ Relacionado:
 | 16 | Performance y JVM | Pendiente | [[Performance Java]] |
 | 17 | Senioridad tecnica | Pendiente | [[Senior Java Engineer]] |
 | 18 | Proyectos practicos | Pendiente | [[Proyectos Java]] |
+| 19 | Quarkus (alternativa cloud-native a Spring) | Pendiente | [[Quarkus]] |
 
 ## Ruta recomendada
 

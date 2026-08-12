@@ -143,6 +143,97 @@ Usuario → Controller → Model → View → Usuario
 
 ---
 
+## 🔹 SAGA (Transacciones Distribuidas)
+
+**Qué es:** Patrón para mantener consistencia de datos entre varios microservicios sin usar una transacción ACID distribuida (que en microservicios no existe de forma práctica — cada servicio tiene su propia base de datos). Una operación de negocio se parte en una secuencia de transacciones locales, cada una con su **acción de compensación** para deshacer el efecto si un paso posterior falla.
+
+```
+Pedido creado → Reservar stock → Cobrar pago → Confirmar envío
+     ✅              ✅              ❌ falla
+                                       ↓
+                        Compensar: liberar stock reservado
+```
+
+### Dos formas de implementarlo
+
+| Estilo | Cómo funciona | Trade-off |
+|---|---|---|
+| **Coreografía** | cada servicio escucha eventos y reacciona, sin coordinador central (Event-Driven puro) | bajo acoplamiento, pero difícil de rastrear el flujo completo al crecer |
+| **Orquestación** | un orquestador central (ej. un Saga Orchestrator) le dice a cada servicio qué hacer y en qué orden | flujo explícito y fácil de rastrear, pero el orquestador es un punto más de complejidad/acoplamiento |
+
+**Ejemplo con coreografía (eventos):**
+```
+PedidoService   → publica PedidoCreado
+InventarioService → escucha PedidoCreado, reserva stock, publica StockReservado (o StockRechazado)
+PagoService     → escucha StockReservado, cobra, publica PagoConfirmado (o PagoFallido)
+InventarioService → si escucha PagoFallido, ejecuta compensación: libera el stock
+```
+
+**Ventajas:**
+- Evita transacciones distribuidas de dos fases (2PC), que no escalan bien entre microservicios.
+- Cada servicio mantiene su autonomía y su propia base de datos.
+
+**Desventajas:**
+- Consistencia **eventual**, no inmediata — hay una ventana donde el sistema está en estado intermedio.
+- Cada paso necesita una compensación bien diseñada — no siempre es trivial (ej. "descontar dinero" no siempre se puede "deshacer" limpio, a veces requiere una operación compensatoria distinta, como un reembolso).
+- Requiere idempotencia en cada handler (los eventos pueden reintentarse/duplicarse).
+
+**Casos de uso:** checkout de e-commerce, reservas (vuelos + hotel + auto), cualquier flujo de negocio que cruza varios microservicios con su propia base de datos.
+
+## 🔹 Cache Aside (Lazy Loading)
+
+**Qué es:** Patrón de caching donde la **aplicación** (no la base de datos ni un proxy) es responsable de leer/escribir en el cache. Es el patrón de cache más común en la práctica.
+
+```
+Lectura:
+  App → ¿está en cache? → Sí → devuelve desde cache
+                        → No → lee de la BD → guarda en cache → devuelve
+
+Escritura/actualización:
+  App → escribe en la BD → invalida (borra) la entrada del cache
+```
+
+```java
+public Producto obtenerProducto(Long id) {
+    Producto cacheado = cache.get("producto:" + id);
+    if (cacheado != null) {
+        return cacheado;
+    }
+    Producto producto = productoRepository.findById(id);
+    cache.put("producto:" + id, producto, Duration.ofMinutes(10));
+    return producto;
+}
+
+public void actualizarProducto(Producto producto) {
+    productoRepository.save(producto);
+    cache.evict("producto:" + producto.getId());   // invalidar, no actualizar el cache directo
+}
+```
+
+**Por qué invalidar y no actualizar el cache directo en el write:** actualizar el cache en cada escritura es más propenso a inconsistencias bajo concurrencia (dos escrituras simultáneas pueden dejar el cache con datos viejos). Invalidar es más simple y seguro: la próxima lectura repuebla el cache con el dato correcto.
+
+**Ventajas:**
+- Solo se cachea lo que realmente se lee (a diferencia de precargar todo).
+- Resiliente a caídas del cache: si Redis está caído, la app sigue funcionando yendo directo a la BD (más lento, pero no se rompe).
+- Simple de implementar sobre cualquier base de datos existente.
+
+**Desventajas:**
+- Primera lectura después de una invalidación es más lenta ("cache miss").
+- Riesgo de datos "stale" (viejos) si la invalidación falla o hay una ventana de carrera entre escritura e invalidación.
+- No sirve tal cual para datos que cambian constantemente (el hit ratio sería bajo).
+
+**Comparación rápida con otras estrategias de cache:**
+
+| Estrategia | Quién actualiza el cache | Cuándo conviene |
+|---|---|---|
+| Cache Aside | la app, bajo demanda (lazy) | caso general, la mayoría de los sistemas |
+| Write-Through | se escribe al cache y a la BD en la misma operación | cuando la consistencia inmediata cache↔BD importa más que la latencia de escritura |
+| Write-Behind | se escribe al cache, y a la BD de forma asíncrona/batch | alto volumen de escrituras, se tolera perder algo en un fallo |
+
+**Casos de uso:** catálogos de productos, perfiles de usuario, cualquier dato de lectura frecuente y escritura poco frecuente — el par Redis + Cache Aside es prácticamente el default en arquitecturas de microservicios.
+
+---
+
 ## 🔄 Comparativa Rápida
 
 | Patrón | Escala | Complejidad | Despliegue | Acoplamiento |
@@ -169,3 +260,14 @@ Usuario → Controller → Model → View → Usuario
 > - Microservicios + Event-Driven
 > - MVC dentro de un Monolítico
 > - Master-Slave en la capa de datos de cualquier arquitectura
+> - Microservicios + SAGA (para transacciones cruzadas) + Cache Aside (para lecturas frecuentes)
+
+## Checklist SAGA y Cache Aside
+- [ ] Puedo explicar por qué no se usa una transacción ACID distribuida entre microservicios.
+- [ ] Sé diferenciar SAGA por coreografía de SAGA por orquestación, con trade-offs de cada una.
+- [ ] Entiendo qué es una acción de compensación y por qué debe ser idempotente.
+- [ ] Sé implementar Cache Aside (lectura con fallback a BD, invalidación en escritura).
+- [ ] Puedo justificar por qué invalidar el cache en vez de actualizarlo directo en cada escritura.
+
+## Relacionado
+[[Postulacion|Senior Java Developer - Coforge/BCP]] — pide explícitamente estos dos patrones como requisito indispensable.

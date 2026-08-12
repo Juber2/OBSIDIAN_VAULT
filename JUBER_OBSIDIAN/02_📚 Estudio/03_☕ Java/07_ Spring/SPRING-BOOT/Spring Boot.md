@@ -26,6 +26,7 @@ Prerequisitos: Spring Core
 | 7 | Actuator | ⬜ | [[07 - Actuator]] |
 | 8 | Manejo de Errores | ⬜ | [[08 - Manejo de Errores]] |
 | 9 | Testing en Spring Boot | ⬜ | [[06 - Testing en Spring Boot]] |
+| 10 | Swagger y OpenAPI | ⬜ | [[09 - Swagger y OpenAPI]] |
 
 ## 🔗 Relaciones
 - **Prerequisitos**: [[Spring Core]]
