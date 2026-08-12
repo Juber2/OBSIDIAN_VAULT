@@ -36,9 +36,15 @@ Java, Spring, Quarkus, Microservicios, REST/RESTful, Docker, Kubernetes, Azure, 
 | AKS (Azure Kubernetes Service) | 🟢 cubierto | [[02 - AKS Fundamentos]] |
 | Cloud Native / PaaS Azure | 🟢 cubierto | [[01 - PaaS vs IaaS vs Cloud Native]], [[03 - App Service y Azure Functions]] |
 | Arquitectura: capas, SAGA, Cache Aside | 🟢 cubierto | [[ARQUITECTURA]] — sección SAGA y Cache Aside agregada |
-| NoSQL: tablas, índices, ACID vs BASE | 🟢 cubierto | [[Bases de Datos Java]] → NoSQL desde Java |
+| NoSQL: tablas, índices, ACID vs BASE | 🟢 cubierto (reescrita 2026-08-12) | [[05 - NoSQL desde Java]] — la versión original de esta nota NO cubría ACID vs BASE ni índices, la reemplacé por una completa |
 
-**Los 12 requisitos indispensables están cubiertos con contenido. Falta: repasarlos, verificar profundidad de Java base, y practicar hablar de esto en voz alta.**
+**Los 12 requisitos indispensables están cubiertos con contenido.**
+
+## Verificación honesta (2026-08-12)
+Antes de dar por cerrado esto, releí el contenido real (no solo el índice/checklist) de cada nota marcada 🟢:
+- ❌ **NoSQL** estaba mal marcada — la nota original era genérica (47 líneas) y no mencionaba ACID/BASE ni índices, que el puesto pide textual. **Corregido.**
+- 🟡 **Java base** (`01_Fundamentos`, `02_Intermedio`, `03_Avanzado`): el contenido SÍ existe y tiene ejemplos de código reales, pero varias notas tienen secciones de plantilla vacías (`⚠️ Errores Comunes`, `📌 Notas Rápidas`) sin completar. No bloquea entrevista pero no está 100% pulido — pendiente de revisión manual, no lo re-escribí completo porque no es contenido nuevo del puesto, es contenido preexistente tuyo.
+- Todo lo demás (Kubernetes, Azure/AKS, SAGA/Cache Aside, Swagger, Docker, Spring, Quarkus) lo escribí yo en esta sesión con profundidad completa, así que no tenía el mismo riesgo de estar "a medias".
 
 ## Requisitos deseables
 
