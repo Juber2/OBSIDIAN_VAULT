@@ -4,7 +4,11 @@ link jamper: https://portal.azure.com/#@pluxeegroup.onmicrosoft.com/resource/sub
 ## Jamper
 usuario: _juber.gutierrez.ext@pluxeegroup.com
 clave: la misma
-## Acceso a servidor UAT dentro del jumper:
+## UAT dentro del jumper:
 
-ip: 10.245.66.76
-clave: la misma que guion bajo
+ip Windows: 10.245.66.76 clave: la misma que guion bajo
+ip Linux: 10.245.66.69 clave: no se
+### BD 
+	10.245.66.76
+	pluxee_sql_uat
+	R1ZrDJ54LDTxz9ukOO9klhD7340zGQFV

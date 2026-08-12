@@ -3,7 +3,7 @@
 Índice del proyecto/cliente Pluxee.
 
 ## Estructura
-- [[00_Referencia/Accesos|Accesos]] — credenciales y accesos (jumper, servidor UAT)
+- [[UAT|Accesos]] — credenciales y accesos (jumper, servidor UAT)
 - [[00_Referencia/Links|Links]] — URLs de entornos (Clientes / Consumidores)
 - [[02_Requerimientos/Requerimientos.base|Requerimientos]] — dashboard filtrable por estado/prioridad/fecha (cada requerimiento es una nota, `02_Requerimientos/_Plantilla.md` para crear uno nuevo)
 - [[03_Actividades/Diario|Diario de actividades]] — log de tareas por fecha

@@ -1,36 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "RQ-2026-08-direcciones-grupos-log",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md"
+      "basename": "Links",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md"
     },
     {
-      "basename": "Requerimientos",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base"
+      "basename": "STA",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos/STA.md"
+    },
+    {
+      "basename": "UAT",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos/UAT.md"
+    },
+    {
+      "basename": "MAJO Activar accesos direcciones y grupos",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/04_Tickets/MAJO Activar accesos direcciones y grupos.md"
+    },
+    {
+      "basename": "Datos prueba",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Datos prueba.md"
     },
     {
       "basename": "Diario",
       "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md"
     },
     {
-      "basename": "_Plantilla",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md"
-    },
-    {
-      "basename": "Links",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md"
-    },
-    {
-      "basename": "Accesos",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos.md"
-    },
-    {
-      "basename": "PLUXEE",
-      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md"
+      "basename": "RQ-2026-08-direcciones-grupos-log",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md"
     },
     {
       "basename": "RQ-2026-08-tarjeta-codigo-seguimiento",
       "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-tarjeta-codigo-seguimiento.md"
+    },
+    {
+      "basename": "_Plantilla",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md"
+    },
+    {
+      "basename": "Requerimientos",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base"
+    },
+    {
+      "basename": "PLUXEE",
+      "path": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md"
     },
     {
       "basename": "RQ-2026-08-mascara-telefono",
@@ -187,18 +199,6 @@
     {
       "basename": "TE_Practica_Caso01_MedicareGlobal",
       "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Practica_Caso01_MedicareGlobal.md"
-    },
-    {
-      "basename": "Tecnologias_Emergentes",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/Tecnologias_Emergentes.md"
-    },
-    {
-      "basename": "TE_Tema3_IA_Generativa_MLOps",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Tema3_IA_Generativa_MLOps.md"
-    },
-    {
-      "basename": "TE_Tema1_Vigilancia_Madurez_Tecnologica",
-      "path": "JUBER_OBSIDIAN/02_📚 Estudio/11_🎓 Cibertec/TE_Tema1_Vigilancia_Madurez_Tecnologica.md"
     }
   ],
   "omittedPaths": [],

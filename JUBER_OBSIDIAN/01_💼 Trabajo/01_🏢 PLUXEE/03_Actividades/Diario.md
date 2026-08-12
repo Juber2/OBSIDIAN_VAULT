@@ -4,7 +4,7 @@ Log de tareas por fecha. Cuando una tarea se convierte en requerimiento formal, 
 
 ## 2026-08-07
 - [ ] probar cambios ETL
-- [ ] hacer cambios pendientes en consola
+- [x] hacer cambios pendientes en consola
 - [ ] cerrar oneshot con Percy
 - [ ] direcciones y grupos, log y roles permisos → reporte de logs (ver [[../02_Requerimientos/RQ-2026-08-direcciones-grupos-log|RQ: direcciones y grupos]])
 - [ ] controlar carga masiva de direcciones y grupos cuando son más de 200 (ver [[../02_Requerimientos/RQ-2026-08-direcciones-grupos-log|RQ: direcciones y grupos]])

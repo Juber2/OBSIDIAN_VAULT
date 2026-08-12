@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
+                "file": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RQ-2026-08-direcciones-grupos-log"
+              "title": "PROPIO"
+            }
+          },
+          {
+            "id": "685f6cdc392234f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Links"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,9 +70,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"JUBER_OBSIDIAN/02_📚 Estudio/10_🔺 Laravel/\" ",
+                "query": "datos prueba",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -201,33 +216,29 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7260191c56604d48",
+  "active": "685f6cdc392234f2",
   "lastOpenFiles": [
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos/STA.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos/UAT.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/04_Tickets/MAJO Activar accesos direcciones y grupos.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/01_Links.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md.tmp.44840.0399739ec84d",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Accesos/UAT.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Datos prueba.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/04_Tickets",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-tarjeta-codigo-seguimiento.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-mascara-telefono.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base.tmp.44840.e30f7e18c6de",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base.tmp.44840.86cc0d6f551b",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md.tmp.44840.882c262e31ab",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md.tmp.44840.fda8215d8a5e",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base.tmp.44840.bf03bbb2c60f",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-mascara-telefono.md.tmp.44840.59a532aed0d2",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md.tmp.44840.6f107d649216",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Backlog.md",
-    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Actividades diarias.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Numero tarjeta cambiar a codigo seguimiento.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base",
     "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/12 - Checklist de Progreso.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Numero tarjeta cambiar a codigo seguimiento.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/PLUXEE.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-mascara-telefono.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Actividades diarias.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos/Sin título.base",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Accesos/UAT.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/05 - Módulo Employee.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/04 - Módulo Company.md",
@@ -238,6 +249,11 @@
     "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/Sebastian - Apolo.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/Chat bot whatsapp.md",
     "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Links/Links pluxee.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Links",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Accesos",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/Requerimientos",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 NTT DATA/Proyectos/PLUXEE/PLUXEE.md",
+    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 NTT DATA/Proyectos/PLUXEE/Actividades Realizadas.md",
     "JUBER_OBSIDIAN/02_📚 Estudio/06_🎓 Cursos/01_📚 DevTalles/ARCHIVOS/gitRecomendaciones.png",
     "JUBER_OBSIDIAN/02_📚 Estudio/06_🎓 Cursos/01_📚 DevTalles/ARCHIVOS/gitHubImage.jpg",
     "JUBER_OBSIDIAN/02_📚 Estudio/05_🏗️ Arquitectura/05_📚 General/Imagenes/1742435149294.gif",
