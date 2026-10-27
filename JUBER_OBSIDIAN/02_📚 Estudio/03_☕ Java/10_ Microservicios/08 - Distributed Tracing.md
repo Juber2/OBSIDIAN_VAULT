@@ -211,3 +211,13 @@ logging:
 ```
 
 ## 📌 Notas Rápidas
+- El `traceId` compartido entre servicios es lo que resuelve el problema real de debuggear microservicios: sin tracing, correlacionar logs de 5 servicios distintos para una sola request es prácticamente manual y lento.
+- `sampling.probability: 1.0` (rastrear el 100%) solo tiene sentido en dev/debugging puntual — en producción con tráfico real, un valor bajo (0.1 o menos) evita overhead y volumen de datos innecesario.
+- Este es el tercer pilar de observabilidad (junto a logs y metrics, ver [[06 - SRE APM y IaC]]) — Application Insights de Azure cumple este mismo rol de forma nativa en AKS, sin necesitar montar Zipkin/Tempo manualmente.
+- Baggage permite propagar contexto de negocio (tenantId, userId) junto con el trace técnico — útil en sistemas multi-tenant para filtrar trazas por cliente.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

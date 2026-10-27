@@ -43,3 +43,9 @@ Microbenchmark no reemplaza prueba de carga real. Sirve para comparar piezas peq
 - [ ] Configuro warmup.
 - [ ] Evito que el compilador elimine el trabajo.
 - [ ] Interpreto resultados segun contexto.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

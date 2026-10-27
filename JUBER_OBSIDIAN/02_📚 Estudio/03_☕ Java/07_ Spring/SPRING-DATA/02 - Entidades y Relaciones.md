@@ -151,3 +151,13 @@ public class Usuario {
 ```
 
 ## 📌 Notas Rápidas
+- El N+1 es probablemente la pregunta más común de entrevista sobre JPA — saber explicarlo con un ejemplo y dar dos soluciones (`JOIN FETCH`, `@EntityGraph`) es más valioso que memorizar todas las anotaciones de relaciones.
+- Cambiar `@ManyToOne`/`@OneToOne` a LAZY explícitamente es casi obligatorio en cualquier proyecto real — el default EAGER de la especificación JPA es una trampa clásica de performance.
+- `hashCode()` constante (basado en `getClass()`, no en campos) evita que el hashCode de una entidad cambie cuando pasa de transient a persistida — importante si la entidad vive en un `HashSet`.
+- `orphanRemoval = true` borra automáticamente los hijos que se quitan de la colección del padre — distinto de `CascadeType.REMOVE`, que solo borra hijos cuando se borra el padre completo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

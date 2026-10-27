@@ -140,3 +140,13 @@ proxy.saludar("Juber"); // imprime el before/after y devuelve "Hola, Juber"
 > Evitar en código de alto rendimiento. Cachear los objetos `Method`, `Field` si se usan repetidamente.
 
 ## 📌 Notas Rápidas
+- Reflection permite inspeccionar/modificar clases, métodos y campos en runtime — es lo que hace posible la "magia" de Spring (`@Autowired`), Hibernate (mapeo de entidades) y frameworks de testing (Mockito).
+- `Class.forName("com.ejemplo.MiClase")` carga una clase dinámicamente por nombre, sin referenciarla directamente en el código.
+- Compilación nativa con GraalVM (ver [[08 - Native Image con GraalVM]] en Quarkus) rompe reflection no declarada explícitamente — es la misma preocupación en ambos contextos.
+- Usar Reflection directamente en código de aplicación es raro y suele ser señal de que hay una forma más idiomática de resolver el problema (frameworks ya lo abstraen).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

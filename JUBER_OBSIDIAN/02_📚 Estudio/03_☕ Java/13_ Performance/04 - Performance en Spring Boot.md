@@ -39,3 +39,9 @@ Antes de tocar JVM, revisa:
 - [ ] Tengo timeouts.
 - [ ] Mido queries por endpoint.
 - [ ] Uso cache solo donde hay patron de lectura repetido.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

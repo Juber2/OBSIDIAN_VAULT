@@ -25,4 +25,12 @@ Nivel: Intermedio
 
 ## 🔗 Relaciones
 - **Prerequisitos**: [[Spring Boot]]
-- **Se conecta con**: [[Testing en Spring Boot]], [[Arquitectura Java]]
+- **Se conecta con**: [[06 - Testing en Spring Boot]], [[Arquitectura Java]]
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Spring]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

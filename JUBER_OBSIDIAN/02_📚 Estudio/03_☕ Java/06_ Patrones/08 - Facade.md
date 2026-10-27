@@ -96,3 +96,13 @@ public class RegistroUsuarioFacade {
 ```
 
 ## 📌 Notas Rápidas
+- Un service que orquesta a otros services (patrón "Application Service" en DDD) es básicamente un Facade — expone una operación de negocio simple ocultando la coordinación interna.
+- No agrega comportamiento nuevo (a diferencia de Decorator) — solo simplifica el acceso a algo que ya existe.
+- Reduce el acoplamiento del cliente con múltiples subsistemas, pero cuidado con que el Facade termine siendo un "God Object" que hace demasiado — sigue debiendo tener una responsabilidad clara.
+- Muy usado al integrar múltiples microservicios desde un solo punto (BFF — Backend For Frontend es esencialmente un Facade a nivel de arquitectura).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

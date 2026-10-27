@@ -143,6 +143,97 @@ Usuario → Controller → Model → View → Usuario
 
 ---
 
+## 🔹 Arquitectura en Capas (Layered Architecture)
+
+**Qué es:** Organiza el código en **capas horizontales**, cada una con una responsabilidad clara, donde cada capa solo puede depender de la capa inmediatamente inferior (o de abstracciones de ella). Es el patrón más común y el que casi todo backend usa aunque no lo llame explícitamente así.
+
+```
+┌─────────────────────────────────┐
+│  Presentación (Controllers/API)  │  recibe HTTP, valida input, serializa output
+├─────────────────────────────────┤
+│  Negocio (Services)              │  lógica de negocio, orquesta casos de uso
+├─────────────────────────────────┤
+│  Acceso a Datos (Repositories)   │  persistencia, queries
+├─────────────────────────────────┤
+│  Base de Datos                   │
+└─────────────────────────────────┘
+```
+
+**Regla de dependencia:** cada capa solo conoce a la de abajo, nunca a la de arriba. Un Repository no debe saber nada de HTTP; un Controller no debe tener SQL embebido.
+
+```java
+@RestController                              // Presentación
+public class ProductoController {
+    private final ProductoService service;    // depende de Negocio
+
+    @GetMapping("/productos/{id}")
+    public ProductoDTO obtener(@PathParam Long id) {
+        return service.buscarPorId(id);
+    }
+}
+
+@Service                                      // Negocio
+public class ProductoService {
+    private final ProductoRepository repository; // depende de Acceso a Datos
+
+    public ProductoDTO buscarPorId(Long id) {
+        Producto producto = repository.findById(id).orElseThrow();
+        return ProductoDTO.from(producto);   // regla de negocio: mapear a DTO
+    }
+}
+
+@Repository                                   // Acceso a Datos
+public interface ProductoRepository extends JpaRepository<Producto, Long> {}
+```
+
+**Ventajas:**
+- Simple de entender y de ubicar dónde va cada cosa — curva de aprendizaje baja para nuevos miembros del equipo.
+- Separación clara de responsabilidades por capa.
+- Es el punto de partida natural antes de evolucionar a Hexagonal/Clean Architecture si el dominio se vuelve complejo.
+
+**Desventajas:**
+- Con el tiempo, tiende al "anemic domain model": toda la lógica termina en Services, y las entidades son solo contenedores de datos sin comportamiento.
+- Acoplamiento a frameworks/infraestructura si no se cuida (ej. la capa de negocio importando anotaciones de JPA directamente).
+- No fuerza que el dominio sea independiente de la infraestructura — para eso existe Hexagonal (ver abajo).
+
+**Casos de uso:** la gran mayoría de APIs CRUD, aplicaciones empresariales de complejidad media, el punto de partida por defecto salvo que haya una razón concreta para algo más elaborado.
+
+## 🔹 Arquitectura Hexagonal (Ports and Adapters)
+
+**Qué es:** Evolución de la arquitectura en capas que invierte la dependencia: el **dominio** (lógica de negocio) queda en el centro, sin conocer nada de infraestructura (frameworks, HTTP, base de datos). La comunicación con el exterior pasa por **puertos** (interfaces que el dominio define) implementados por **adaptadores** (la infraestructura real).
+
+```
+        Adaptador de entrada (REST Controller)
+                    │
+                    ▼
+        Puerto de entrada (Use Case interface)
+                    │
+        ┌───────────▼───────────┐
+        │   DOMINIO (núcleo)     │  ← no conoce Spring, JPA, HTTP
+        │   entidades + reglas   │
+        └───────────┬───────────┘
+                    │
+        Puerto de salida (Repository interface)
+                    │
+                    ▼
+        Adaptador de salida (JPA Repository real)
+```
+
+Ver desarrollo completo con código en [[03 - Arquitectura Hexagonal]].
+
+**Diferencia clave con Layered clásica:** en Layered, el Service (negocio) depende directamente de un Repository concreto (acoplado a JPA). En Hexagonal, el dominio define una **interfaz** (puerto de salida) y no sabe si detrás hay JPA, MongoDB o un mock — la dependencia se invierte (Dependency Inversion Principle aplicado a nivel arquitectónico).
+
+**Ventajas:**
+- El dominio se puede testear sin levantar Spring, JPA ni una base de datos real.
+- Cambiar de proveedor (JPA → MongoDB, REST → gRPC) no toca el núcleo de negocio.
+- Fuerza a pensar el dominio primero, la infraestructura después.
+
+**Desventajas:**
+- Más código (interfaces + implementaciones) para casos simples — sobre-ingeniería si el dominio es un CRUD trivial.
+- Curva de aprendizaje mayor para el equipo.
+
+**Casos de uso:** dominios de negocio complejos y de larga vida, donde el costo de la abstracción se paga con creces en mantenibilidad; no recomendado para un CRUD simple sin lógica de negocio real.
+
 ## 🔹 SAGA (Transacciones Distribuidas)
 
 **Qué es:** Patrón para mantener consistencia de datos entre varios microservicios sin usar una transacción ACID distribuida (que en microservicios no existe de forma práctica — cada servicio tiene su propia base de datos). Una operación de negocio se parte en una secuencia de transacciones locales, cada una con su **acción de compensación** para deshacer el efecto si un paso posterior falla.
@@ -243,6 +334,8 @@ public void actualizarProducto(Producto producto) {
 | Event-Driven | Horizontal | Alta | Independiente | Muy bajo |
 | MVC | N/A | Baja | Simple | Medio |
 | Master-Slave | Lecturas | Media | Coordinado | Medio |
+| En Capas (Layered) | N/A | Baja | Simple | Medio-Alto (entre capas adyacentes) |
+| Hexagonal | N/A | Media-Alta | Simple | Bajo (dominio aislado de infraestructura) |
 
 ---
 
@@ -268,6 +361,13 @@ public void actualizarProducto(Producto producto) {
 - [ ] Entiendo qué es una acción de compensación y por qué debe ser idempotente.
 - [ ] Sé implementar Cache Aside (lectura con fallback a BD, invalidación en escritura).
 - [ ] Puedo justificar por qué invalidar el cache en vez de actualizarlo directo en cada escritura.
+
+## Checklist Capas y Hexagonal
+- [ ] Puedo dibujar y explicar las capas típicas (Presentación/Negocio/Datos) y la regla de dependencia entre ellas.
+- [ ] Sé explicar qué es el "anemic domain model" y por qué la arquitectura en capas tiende a caer en eso.
+- [ ] Puedo explicar puertos y adaptadores en Hexagonal, con un ejemplo propio (no solo el genérico).
+- [ ] Sé argumentar cuándo Hexagonal vale la pena y cuándo es sobre-ingeniería para el caso.
+- [ ] Entiendo cómo el Dependency Inversion Principle es lo que hace posible que el dominio no dependa de la infraestructura en Hexagonal.
 
 ## Relacionado
 [[Postulacion|Senior Java Developer - Coforge/BCP]] — pide explícitamente estos dos patrones como requisito indispensable.

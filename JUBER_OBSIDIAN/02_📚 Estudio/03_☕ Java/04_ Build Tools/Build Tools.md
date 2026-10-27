@@ -19,4 +19,12 @@ Relacionado:
 | 3 | Estructura de Proyecto Java | ⬜ | [[03 - Estructura de Proyecto Java]] |
 
 ## 🔗 Relaciones
-- **Se conecta con**: [[Spring Boot]], [[Docker con Java]]
+- **Se conecta con**: [[Spring Boot]], [[01 - Docker con Java]]
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Build Tools]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

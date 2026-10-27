@@ -278,3 +278,13 @@ public class UserRestClient {
 > En apps MVC normales, Feign es más simple y legible. WebClient es mejor para apps que necesitan concurrencia alta o ya usan WebFlux.
 
 ## 📌 Notas Rápidas
+- Feign sin Circuit Breaker es la trampa más común: por default, si el servicio destino está lento (no caído), Feign espera el timeout completo en cada llamada, propagando la lentitud en cascada.
+- `RestClient` (Spring 6.1+) es el reemplazo moderno recomendado de `RestTemplate` para llamadas síncronas simples — API más fluida, sin las limitaciones que llevaron a deprecar `RestTemplate` en el roadmap de Spring.
+- Elegir entre comunicación síncrona (Feign/WebClient) y asíncrona (Kafka) no es solo preferencia técnica: síncrona acopla temporalmente los servicios (si uno cae, afecta al otro), asíncrona lo evita a costa de consistencia eventual — ver [[07 - Comunicacion Asincrona - Kafka]].
+- Propagar el JWT del request original hacia llamadas downstream (Feign interceptor) es necesario para mantener el contexto de autorización entre microservicios — sin esto, el servicio downstream no sabe quién hizo la request original.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

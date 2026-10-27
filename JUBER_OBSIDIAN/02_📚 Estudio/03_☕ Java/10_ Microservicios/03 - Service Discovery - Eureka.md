@@ -219,3 +219,13 @@ eureka:
 > K8s tiene su propio Service Discovery. Con K8s, solo configura los Service de K8s y usa los nombres de los Services como hostnames.
 
 ## 📌 Notas Rápidas
+- Este es un punto de entrevista importante para el puesto que estás preparando: en Kubernetes/AKS **no hace falta Eureka** — el Service de Kubernetes ya resuelve el nombre lógico a IPs actuales vía DNS interno (ver [[03 - Services y Networking]]). Traer Eureka a un cluster K8s es duplicar una capa que la plataforma ya resuelve.
+- `@LoadBalanced` es lo que hace que `RestTemplate`/`WebClient` interpreten `http://USER-SERVICE/...` como un nombre lógico a resolver, en vez de un hostname DNS real.
+- El "self-preservation mode" de Eureka evita que el registro completo se vacíe de golpe ante una partición de red transitoria — desactivarlo en dev simplifica el comportamiento, pero mantenerlo activo en producción evita falsos positivos masivos.
+- `lease-expiration-duration` (cuánto tarda en dar de baja una instancia sin heartbeat) es un trade-off: muy corto genera bajas prematuras por latencia momentánea, muy largo deja tráfico yendo a instancias caídas.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

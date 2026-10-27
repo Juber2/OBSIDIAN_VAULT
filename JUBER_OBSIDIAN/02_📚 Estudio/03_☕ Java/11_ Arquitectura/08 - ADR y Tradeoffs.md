@@ -52,3 +52,9 @@ No existe arquitectura perfecta. Existe arquitectura adecuada para el contexto, 
 - [ ] Explico alternativas rechazadas.
 - [ ] Incluyo consecuencias negativas.
 - [ ] Reviso ADRs cuando el contexto cambia.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

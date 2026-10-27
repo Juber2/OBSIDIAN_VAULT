@@ -48,3 +48,9 @@ spring:
 - [ ] Cierro recursos con try-with-resources.
 - [ ] Dimensiono pool segun DB y trafico.
 - [ ] No abro conexiones manuales en cada metodo si Spring ya gestiona transacciones.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

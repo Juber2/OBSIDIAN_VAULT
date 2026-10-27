@@ -45,3 +45,9 @@ Spring Modulith ayuda a validar dependencias entre modulos, publicar eventos de 
 - [ ] Hay limites claros entre modulos.
 - [ ] Evito dependencias circulares.
 - [ ] Puedo extraer un modulo a microservicio si el negocio lo exige.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

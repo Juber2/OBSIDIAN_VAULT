@@ -153,3 +153,13 @@ public class PedidoService {
 ```
 
 ## 📌 Notas Rápidas
+- En producción, exponer solo los endpoints necesarios (`health,info,metrics`), nunca `*` — endpoints como `/env`, `/heapdump` o `/shutdown` filtran información sensible o son directamente peligrosos si quedan públicos.
+- `management.server.port` en un puerto distinto al de la app permite exponer Actuator solo dentro de la red interna (ej. para el liveness/readiness probe de Kubernetes) sin exponerlo a internet junto con la API pública.
+- Un `HealthIndicator` custom es la forma correcta de que Kubernetes sepa si tu app realmente puede atender tráfico (ver liveness/readiness en [[02 - Pods Deployments y ReplicaSets]]), no solo si el proceso está vivo.
+- Micrometer es la fachada de métricas de Spring Boot — el mismo código funciona sea el backend Prometheus, Datadog o cualquier otro, solo cambia la dependencia del registry.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

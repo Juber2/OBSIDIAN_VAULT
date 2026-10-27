@@ -55,3 +55,9 @@ spec:
 - [ ] Uso readiness y liveness probes.
 - [ ] No guardo secretos en imagenes.
 - [ ] La app apaga correctamente con graceful shutdown.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

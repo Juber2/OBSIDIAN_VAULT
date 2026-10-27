@@ -99,3 +99,13 @@ conjunto.size(); // 1
 > ```
 
 ## 📌 Notas Rápidas
+- Los arrays tienen tamaño fijo al crearse; las colecciones (`List`, `Set`, `Map`) crecen dinámicamente.
+- `ArrayList` es rápido para acceso por índice pero lento para insertar/eliminar al inicio; `LinkedList` es al revés.
+- `HashMap` no garantiza orden; `LinkedHashMap` mantiene orden de inserción; `TreeMap` mantiene orden natural/comparador.
+- Iterar y modificar una colección al mismo tiempo con un `for-each` lanza `ConcurrentModificationException` — usar `Iterator.remove()` o `removeIf()`.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

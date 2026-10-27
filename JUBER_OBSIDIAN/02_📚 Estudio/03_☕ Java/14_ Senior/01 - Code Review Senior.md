@@ -33,3 +33,9 @@ Este metodo mezcla validacion, persistencia y envio de eventos. Podriamos mover 
 - [ ] Propongo alternativas concretas.
 - [ ] Diferencio bloqueante de sugerencia.
 - [ ] Reviso tests con la misma seriedad que codigo productivo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

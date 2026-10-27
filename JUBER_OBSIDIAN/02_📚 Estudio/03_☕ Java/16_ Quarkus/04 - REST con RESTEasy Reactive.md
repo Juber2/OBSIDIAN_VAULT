@@ -129,3 +129,9 @@ No es obligatorio usar reactivo — un método que devuelve `ProductoDTO` direct
 - [ ] Uso Bean Validation en los DTOs de entrada.
 - [ ] Centralizo manejo de errores con `ExceptionMapper`.
 - [ ] Entiendo cuándo usar `Uni`/`Multi` (Mutiny) vs estilo imperativo simple.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

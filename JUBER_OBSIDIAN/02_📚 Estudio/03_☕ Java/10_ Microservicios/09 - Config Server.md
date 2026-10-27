@@ -223,3 +223,13 @@ vault kv put secret/order-service db.password=supersecret jwt.secret=myjwtsecret
 ```
 
 ## 📌 Notas Rápidas
+- `@RefreshScope` es imprescindible para que un bean recargue su configuración con `/actuator/refresh` — sin esa anotación, el valor queda "congelado" desde el arranque aunque el Config Server tenga el dato actualizado.
+- Spring Cloud Bus + `busrefresh` propaga el refresh a **todas** las instancias de todos los servicios con un solo request, usando Kafka/RabbitMQ como canal — evita tener que pegarle una por una a cada instancia.
+- En un contexto Kubernetes/AKS, ConfigMaps y Secrets (ver [[04 - ConfigMaps Secrets y Volumenes]]) suelen cumplir buena parte de este rol de forma nativa — Config Server sigue aportando valor cuando se necesita refresh en caliente sin reiniciar Pods, algo que un ConfigMap montado como volumen no siempre logra de forma inmediata según cómo la app lee el archivo.
+- Vault como backend de secrets (en vez de guardarlos en el repo Git de config) es la práctica correcta — un repo Git de configuración con secrets en texto plano es un riesgo de seguridad grave.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

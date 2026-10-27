@@ -294,3 +294,13 @@ class OrderMessagingIntegrationTest {
 ```
 
 ## 📌 Notas Rápidas
+- Declarar Exchange/Queue/Binding como `@Bean` los crea automáticamente al arrancar la app — evita tener que configurarlos manualmente en la consola de RabbitMQ antes del deploy.
+- `basicNack(deliveryTag, false, true)` reencola el mensaje para reintento; usar `false` en el último parámetro lo descarta (o lo manda al DLX si está configurado) — la diferencia entre error técnico transitorio y error de negocio permanente determina cuál usar.
+- El patrón RPC con `convertSendAndReceive` simula sincronía sobre un broker asíncrono — útil pero rompe parte del desacople que la mensajería busca dar; evaluar si un llamado HTTP directo no sería más simple para ese caso puntual.
+- Publisher Confirms (`setConfirmCallback`) es el equivalente RabbitMQ de `acks` en Kafka — confirma que el broker realmente recibió el mensaje, no solo que el envío no lanzó excepción del lado del cliente.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

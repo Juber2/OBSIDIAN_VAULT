@@ -103,3 +103,13 @@ En la mayoría de proyectos Spring Boot o empresariales **no es necesario** conf
 > Con módulos, Spring e Hibernate no pueden acceder a campos privados sin `opens`. Esto causa `InaccessibleObjectException` en frameworks que usan Reflection.
 
 ## 📌 Notas Rápidas
+- JPMS (Java Platform Module System, Java 9+) agrega una capa de encapsulamiento fuerte por encima de los packages — un módulo declara explícitamente qué expone (`exports`) y qué necesita (`requires`).
+- Se declara en un archivo `module-info.java` en la raíz del código fuente.
+- La mayoría de proyectos backend con Spring/frameworks siguen usando el "classpath clásico" (unnamed module) en vez de módulos explícitos, porque muchas librerías del ecosistema aún no son 100% module-friendly — es más un tema de conocimiento teórico/entrevista que de uso diario.
+- `opens` (a diferencia de `exports`) permite acceso por Reflection en runtime a paquetes internos — necesario para que frameworks como Hibernate funcionen con módulos.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

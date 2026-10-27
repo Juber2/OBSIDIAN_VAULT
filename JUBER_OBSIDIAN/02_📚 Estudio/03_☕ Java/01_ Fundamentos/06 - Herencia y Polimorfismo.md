@@ -83,3 +83,13 @@ La decisión de qué método ejecutar se toma en **tiempo de ejecución** (dynam
 > Si el padre no tiene constructor vacío, el hijo **debe** llamar a `super(...)` como primera línea del constructor.
 
 ## 📌 Notas Rápidas
+- Java solo permite herencia simple de clases (`extends` una sola) — para "múltiple herencia" se usan interfaces.
+- El polimorfismo en runtime se resuelve por el tipo real del objeto, no por el tipo de la variable (`Animal a = new Perro();` → llama métodos de `Perro`).
+- `@Override` no es obligatorio pero sí recomendado — el compilador avisa si el método no coincide realmente con uno de la superclase (typo en la firma, por ejemplo).
+- Un método `private` o `static` de la superclase no se puede sobrescribir (override) — solo se puede ocultar (hiding), comportamiento distinto y menos usado.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

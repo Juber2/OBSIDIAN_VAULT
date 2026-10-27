@@ -310,3 +310,13 @@ public class LoggingFilter implements GlobalFilter, Ordered {
 ```
 
 ## 📌 Notas Rápidas
+- Spring Cloud Gateway es reactivo (WebFlux) por diseño — necesita alta concurrencia con I/O no bloqueante porque literalmente todo el tráfico de la plataforma pasa por él.
+- En un contexto Azure/AKS, esta responsabilidad se puede resolver con Application Gateway + AGIC en vez de Spring Cloud Gateway — ver [[04 - APIM y Application Gateway]] y [[05 - Ingress y Exposicion Externa]]; la elección depende de si se quiere lógica de gateway en código Java o delegada a un servicio administrado de Azure.
+- Propagar el usuario autenticado vía headers (`X-User-Email`, `X-User-Roles`) hacia los microservicios downstream es un patrón común — evita que cada microservicio tenga que validar el JWT completo de nuevo, confiando en que el Gateway ya lo hizo.
+- Rate limiting en el Gateway (vs en cada microservicio) centraliza la protección contra abuso en un solo punto, coherente con por qué existe un Gateway en primer lugar: no duplicar cross-cutting concerns en cada servicio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

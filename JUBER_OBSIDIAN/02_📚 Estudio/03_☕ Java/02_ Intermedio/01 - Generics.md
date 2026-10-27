@@ -155,3 +155,13 @@ System.out.println(strings.getClass() == integers.getClass()); // true
 > ```
 
 ## 📌 Notas Rápidas
+- Generics existen solo en compile-time (type erasure) — en runtime, `List<String>` y `List<Integer>` son ambos `List`.
+- `? extends T` (wildcard covariante) se usa para leer de una colección; `? super T` (contravariante) para escribir.
+- Un método genérico puede tener su propio tipo, independiente de la clase: `<T> T primero(List<T> lista)`.
+- Bounded types (`<T extends Comparable<T>>`) restringen qué tipos se aceptan, habilitando llamar métodos de esa cota dentro del genérico.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

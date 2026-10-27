@@ -70,3 +70,9 @@ Usala cuando hay reglas de negocio importantes, integraciones externas o vida la
 - [ ] Los casos de uso son faciles de testear sin Spring.
 - [ ] Los adaptadores convierten entre modelos externos y modelo interno.
 - [ ] Los nombres reflejan intencion de negocio, no solo tecnologia.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

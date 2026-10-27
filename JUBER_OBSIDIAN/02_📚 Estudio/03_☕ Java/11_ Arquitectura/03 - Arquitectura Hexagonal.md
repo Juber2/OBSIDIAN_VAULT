@@ -53,3 +53,9 @@ Puedes cambiar REST por gRPC, JPA por MongoDB o Stripe por otro proveedor sin re
 - [ ] Los adaptadores traducen datos externos.
 - [ ] Los puertos tienen nombres de negocio.
 - [ ] La infraestructura se puede reemplazar con fakes en tests.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

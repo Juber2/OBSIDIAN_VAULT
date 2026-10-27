@@ -43,3 +43,9 @@ Actuator expone health, metrics, info y otros endpoints utiles para operacion.
 - [ ] Hay health checks.
 - [ ] Hay metricas de negocio y tecnicas.
 - [ ] Puedo correlacionar una request entre servicios.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

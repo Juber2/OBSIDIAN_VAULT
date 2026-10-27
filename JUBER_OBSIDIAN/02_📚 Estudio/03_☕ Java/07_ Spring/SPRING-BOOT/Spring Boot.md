@@ -27,7 +27,17 @@ Prerequisitos: Spring Core
 | 8 | Manejo de Errores | ⬜ | [[08 - Manejo de Errores]] |
 | 9 | Testing en Spring Boot | ⬜ | [[06 - Testing en Spring Boot]] |
 | 10 | Swagger y OpenAPI | ⬜ | [[09 - Swagger y OpenAPI]] |
+| 11 | WebSockets y Tiempo Real | ⬜ | [[10 - WebSockets y Tiempo Real]] |
+| 12 | Jobs Programados y Spring Batch | ⬜ | [[11 - Jobs Programados y Spring Batch]] |
 
 ## 🔗 Relaciones
 - **Prerequisitos**: [[Spring Core]]
-- **Se conecta con**: [[Spring Data JPA]], [[Spring Security]], [[Microservicios]]
+- **Se conecta con**: [[Spring Data]], [[Spring Security]], [[Microservicios]]
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Spring]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

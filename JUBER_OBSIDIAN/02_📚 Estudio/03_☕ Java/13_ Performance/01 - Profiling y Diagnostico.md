@@ -37,3 +37,9 @@ Profiling es observar donde consume CPU, memoria, IO o tiempo una aplicacion.
 - [ ] Identifique cuello de botella real.
 - [ ] Diferencio CPU, memoria, DB y red.
 - [ ] Guardo evidencia antes y despues del cambio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

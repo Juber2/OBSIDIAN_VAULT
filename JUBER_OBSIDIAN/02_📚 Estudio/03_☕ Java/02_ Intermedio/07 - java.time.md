@@ -148,3 +148,13 @@ LocalDate.now().format(localizado); // "jueves, 21 de mayo de 2026"
 > El formato del string debe coincidir exactamente con el patrón del formatter.
 
 ## 📌 Notas Rápidas
+- Todas las clases de `java.time` (`LocalDate`, `LocalDateTime`, `Instant`, etc.) son inmutables — cada operación devuelve un objeto nuevo.
+- Para timestamps en base de datos/APIs, `Instant` (UTC, sin zona) es la opción más segura para evitar ambigüedades de zona horaria.
+- `Duration` mide tiempo entre dos instantes (horas, minutos, segundos); `Period` mide diferencias en fechas de calendario (años, meses, días).
+- Reemplaza por completo a `java.util.Date`/`Calendar` (legacy, mutable y con muchos gotchas) — no usar las clases viejas en código nuevo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

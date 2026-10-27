@@ -42,3 +42,9 @@ GET /orders?page=0&size=20&sort=createdAt,desc
 - [ ] No expongo campos internos.
 - [ ] Uso OpenAPI/Swagger cuando aplica.
 - [ ] Tengo compatibilidad hacia atras.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

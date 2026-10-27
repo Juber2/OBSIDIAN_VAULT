@@ -291,3 +291,13 @@ spec:
 ```
 
 ## 📌 Notas Rápidas
+- El Dockerfile multi-stage (build en una imagen JDK, runtime en una JRE Alpine) es exactamente el mismo patrón que se usa para Quarkus native (ver [[08 - Native Image con GraalVM]]) — imagen final más chica y sin herramientas de build innecesarias en producción.
+- `-XX:+UseContainerSupport` y `-XX:MaxRAMPercentage` son claves en contenedores: sin esto, la JVM históricamente no detectaba bien los límites de memoria del contenedor (cgroups) y podía sobreasignar heap y ser OOMKilled por Kubernetes.
+- `readinessProbe`/`livenessProbe` apuntando a Actuator (`/actuator/health/readiness`, `/actuator/health/liveness`) es la integración directa entre Spring Boot y el mecanismo de salud de Kubernetes visto en [[02 - Pods Deployments y ReplicaSets]].
+- El HPA (Horizontal Pod Autoscaler) escala Pods según CPU/memoria; combinado con el Cluster Autoscaler de AKS (ver [[02 - AKS Fundamentos]]) se obtiene autoscaling de extremo a extremo: más carga → más Pods → más nodos si hace falta.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

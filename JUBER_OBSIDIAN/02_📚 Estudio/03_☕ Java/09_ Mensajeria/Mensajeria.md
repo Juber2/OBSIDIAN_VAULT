@@ -37,3 +37,11 @@ Palabras clave:
 | Replay | ✅ Sí (rewind offset) | ❌ No |
 | Caso de uso | Event streaming, auditoría, big data | Task queues, RPC, routing complejo |
 | Ideal para | Microservicios con eventos | Jobs, notificaciones, workflows |
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Mensajeria]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

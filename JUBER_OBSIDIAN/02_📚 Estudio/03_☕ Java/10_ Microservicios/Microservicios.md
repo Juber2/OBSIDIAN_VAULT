@@ -31,6 +31,7 @@ Palabras clave:
 | [[08 - Distributed Tracing]] | ⬜ |
 | [[09 - Config Server]] | ⬜ |
 | [[10 - Docker y Kubernetes para Microservicios]] | ⬜ |
+| [[11 - gRPC]] | ⬜ |
 
 ## 🧠 Monolito vs Microservicios
 
@@ -79,3 +80,11 @@ Palabras clave:
     </dependencies>
 </dependencyManagement>
 ```
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Microservicios]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

@@ -125,3 +125,13 @@ java -jar app.jar --spring.profiles.active=prod,monitoring,feature-x
 ```
 
 ## 📌 Notas Rápidas
+- `@Profile("!prod")` (negación) es útil para exponer herramientas de debug/dev que nunca deben llegar a producción, sin duplicar configuración.
+- Los perfiles no son solo para "properties distintas" — con `@Profile` en un `@Bean`/`@Component` podés cambiar la implementación completa (ej. `MockEmailService` en dev, `SmtpEmailService` en prod).
+- `application.properties` (sin sufijo de perfil) siempre se carga como base, y los perfiles solo sobrescriben lo que definen — no reemplazan el archivo completo.
+- En Kubernetes, el perfil activo normalmente se inyecta vía variable de entorno (`SPRING_PROFILES_ACTIVE`) desde un ConfigMap, no hardcodeado en la imagen — ver [[04 - ConfigMaps Secrets y Volumenes]].
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

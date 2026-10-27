@@ -35,3 +35,9 @@ Un senior multiplica la capacidad del equipo. No es solo escribir mas codigo.
 - [ ] Ayudo a que otros crezcan.
 - [ ] No bloqueo al equipo por perfeccionismo.
 - [ ] Dejo contexto escrito.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

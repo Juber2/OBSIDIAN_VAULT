@@ -96,3 +96,13 @@ String s = String.valueOf(100);  // "100"
 > `Integer.parseInt("abc")` lanza `NumberFormatException`. Siempre validar antes de parsear.
 
 ## 📌 Notas Rápidas
+- `String` es inmutable — cada operación (`concat`, `+`, `replace`) crea un objeto nuevo, no modifica el original.
+- Para concatenar muchas veces en un bucle, usar `StringBuilder` — concatenar con `+` repetidamente en un loop es O(n²).
+- El String pool reutiliza literales idénticos (`"Hola" == "Hola"` suele ser `true`), pero `new String("Hola")` fuerza un objeto nuevo fuera del pool.
+- `StringBuilder` no es thread-safe; `StringBuffer` sí (sincronizado) pero es más lento — en la práctica casi siempre se usa `StringBuilder`.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -104,3 +104,13 @@ var datos = obtener();   // ambiguo
 > Usarlo donde mejora legibilidad, no como excusa para no escribir tipos. En APIs públicas siempre declarar el tipo explícitamente.
 
 ## 📌 Notas Rápidas
+- `var` solo aplica a variables locales (dentro de métodos) — no se puede usar en atributos de clase, parámetros de método o tipos de retorno.
+- El tipo se infiere en compile-time desde el valor asignado — sigue siendo tipado estático, no dinámico.
+- No se puede usar `var` sin inicializar (`var x;` no compila) — necesita un valor del cual inferir el tipo.
+- Útil especialmente con generics largos: `var lista = new ArrayList<Map<String, List<Integer>>>();` en vez de repetir el tipo completo dos veces.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -44,3 +44,9 @@ Debugging senior es reducir incertidumbre bajo presion.
 - [ ] Tengo rollback o feature flag.
 - [ ] Comunico estado con claridad.
 - [ ] Documento causa raiz y acciones preventivas.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

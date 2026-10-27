@@ -89,3 +89,13 @@ formulario.render(""); // imprime toda la jerarquía
 ```
 
 ## 📌 Notas Rápidas
+- La clave es que el cliente trate hojas y nodos compuestos con la **misma interfaz** — no necesita `if (esHoja) ... else ...` en ningún lado.
+- Ejemplo clásico fuera de UI: estructuras de permisos/organigramas (un "Departamento" contiene Empleados y otros Departamentos, todos responden a "cuántas personas tiene").
+- Cuidado con operaciones que no tienen sentido en todos los niveles (ej. `agregar()` en una hoja) — a veces se resuelve lanzando `UnsupportedOperationException` en las hojas.
+- Common en parsers y AST (árboles de sintaxis) — cada nodo del árbol es un Composite.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

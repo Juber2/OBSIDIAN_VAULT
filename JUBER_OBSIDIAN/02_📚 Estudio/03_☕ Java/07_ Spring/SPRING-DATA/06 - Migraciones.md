@@ -161,3 +161,13 @@ databaseChangeLog:
 | Uso típico | Proyectos simples-medianos | Proyectos grandes/enterprise |
 
 ## 📌 Notas Rápidas
+- Una migración de Flyway aplicada **nunca se edita** — si tiene un error, se crea una nueva migración que lo corrige; editar un archivo ya aplicado rompe el checksum y falla en otros ambientes.
+- `baseline-on-migrate=true` es necesario solo la primera vez que se introduce Flyway en una BD que ya tenía tablas creadas manualmente — evita que Flyway intente recrear lo que ya existe.
+- Con `ddl-auto=validate` + Flyway, Hibernate deja de ser la fuente de verdad del schema — las migraciones SQL lo son, Hibernate solo confirma que las entidades coinciden.
+- Este mismo mecanismo (Flyway) es el que ya usás en Quarkus con Panache (ver [[05 - Panache y Persistencia]]) — es independiente del framework, funciona igual en ambos ecosistemas.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

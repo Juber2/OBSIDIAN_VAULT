@@ -138,3 +138,13 @@ public void desactivar(Long id) {
 ```
 
 ## 📌 Notas Rápidas
+- `JpaRepository` es la implementación de Spring del **Repository pattern** (originalmente descrito en Domain-Driven Design) — abstrae la persistencia detrás de una interfaz, el dominio no sabe si detrás hay JPA, MongoDB o un mock.
+- Los "Derived Query Methods" generan la query a partir del nombre del método en tiempo de arranque — si el nombre no coincide con un campo real de la entidad, falla al iniciar la app (fail-fast), no en runtime al llamarlo.
+- Para queries complejas dinámicas (filtros opcionales combinables), Specifications es más mantenible que encadenar muchos métodos derivados o construir JPQL con concatenación de strings.
+- `@Modifying` + `@Query` siempre requiere `@Transactional` en el método que lo llama — sin eso, Spring Data lanza `InvalidDataAccessApiUsageException`.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

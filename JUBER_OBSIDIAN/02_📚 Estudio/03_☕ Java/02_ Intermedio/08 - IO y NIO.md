@@ -153,3 +153,13 @@ try (InputStream in = Files.newInputStream(origen);
 > `FileNotFoundException` es subclase de `IOException`. Capturar la más específica primero.
 
 ## 📌 Notas Rápidas
+- `java.io` es basado en streams (byte a byte / carácter a carácter, bloqueante); `java.nio` agrega buffers, canales y operaciones no bloqueantes.
+- `Files` (NIO.2, Java 7+) simplifica muchísimo operaciones comunes: `Files.readAllLines()`, `Files.write()`, `Files.copy()` — preferir sobre `FileInputStream` manual para casos simples.
+- `BufferedReader`/`BufferedWriter` envuelven streams para reducir llamadas costosas al sistema operativo (leen/escriben en bloques).
+- Para archivos grandes, procesar línea por línea (`Files.lines()` como Stream) en vez de cargar todo el archivo en memoria.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

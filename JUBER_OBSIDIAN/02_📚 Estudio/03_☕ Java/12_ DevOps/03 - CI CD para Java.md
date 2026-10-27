@@ -47,3 +47,9 @@ jobs:
 - [ ] Nadie despliega manualmente desde su laptop.
 - [ ] Fallar tests bloquea merge.
 - [ ] El artefacto desplegado es el mismo que fue probado.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

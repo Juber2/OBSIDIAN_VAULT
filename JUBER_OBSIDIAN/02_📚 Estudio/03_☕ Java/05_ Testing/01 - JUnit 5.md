@@ -188,3 +188,13 @@ class CuandoElUsuarioEsAdmin {
 > `metodo_escenario_resultadoEsperado` — hace los tests más legibles y autodescriptivos.
 
 ## 📌 Notas Rápidas
+- `assertAll` es preferible a múltiples `assertEquals` sueltos cuando querés ver **todos** los fallos de una vez, no solo el primero.
+- `@ParameterizedTest` reduce duplicación de tests que solo cambian datos de entrada — preferible a copiar/pegar el mismo test con distintos valores.
+- `@Nested` agrupa tests relacionados en clases internas, útil para organizar escenarios (ej. "cuando el usuario es admin" vs "cuando no lo es").
+- JUnit 5 corre sobre JUnit Platform, lo que permite que otros frameworks (Mockito, TestContainers, Spring) se integren vía extensiones (`@ExtendWith`).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

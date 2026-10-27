@@ -147,3 +147,13 @@ validador.validar(pedido); // true si pasa todos los filtros
 Los filtros de Spring Security y los `HandlerInterceptor` son implementaciones de Chain of Responsibility.
 
 ## 📌 Notas Rápidas
+- La cadena de `Filter` de Servlets y de `SecurityFilterChain` en Spring Security es Chain of Responsibility puro — cada filtro decide procesar y/o pasar al siguiente.
+- Cada manejador no necesita saber quién procesó (o no) la petición antes — solo conoce al siguiente en la cadena, lo cual reduce acoplamiento fuerte.
+- Si ningún manejador procesa la petición, hay que decidir explícitamente qué pasa (excepción, valor default) — es un error común dejarlo sin manejar y que la petición "se pierda" silenciosamente.
+- Se combina naturalmente con Strategy: cada eslabón de la cadena puede internamente usar una estrategia distinta para decidir si procesa o no.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

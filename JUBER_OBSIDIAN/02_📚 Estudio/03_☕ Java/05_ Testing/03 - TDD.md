@@ -126,3 +126,13 @@ No es obligatorio hacer TDD en:
 - Tests de integración (son posteriores)
 
 ## 📌 Notas Rápidas
+- El valor real de TDD no es "tener tests" — es que el diseño del código termina siendo más desacoplado, porque escribir el test primero obliga a pensar en cómo se va a usar la clase antes de implementarla.
+- "Mínimo código para pasar el test" a veces significa código deliberadamente tonto (`return 115.0;` hardcodeado) — se generaliza recién cuando un segundo test lo obliga. Es contraintuitivo pero es la disciplina correcta.
+- TDD estricto es más común en katas y lógica de negocio pura; en la práctica de equipo, muchos hacen "test-after" (escriben el código y el test casi en simultáneo) sin perder la disciplina de cobertura.
+- No confundir TDD (metodología de cómo escribís código) con Testing (la práctica general de tener tests) — se puede tener buena cobertura sin haber hecho TDD estricto.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

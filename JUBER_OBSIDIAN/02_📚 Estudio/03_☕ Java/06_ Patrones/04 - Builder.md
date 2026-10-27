@@ -116,3 +116,13 @@ public Pizza build() {
 ```
 
 ## 📌 Notas Rápidas
+- En la práctica diaria, `@Builder` de Lombok reemplaza casi por completo la implementación manual — igual conviene saber cómo funciona por dentro para entrevista.
+- Ideal para objetos inmutables con muchos campos opcionales — evita el "telescoping constructor" y hace la construcción legible por nombre de campo.
+- El método `build()` es el lugar natural para validar invariantes antes de crear el objeto final (fail-fast).
+- No es lo mismo que Factory: Builder se enfoca en **cómo se construye paso a paso** un objeto complejo, no en decidir **qué clase** instanciar.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -13,31 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md",
+                "file": "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/08 - ADR y Tradeoffs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Links"
+              "title": "08 - ADR y Tradeoffs"
             }
           },
           {
-            "id": "685f6cdc392234f2",
+            "id": "9105444f48d95a9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/PROPIO.md",
+                "file": "JUBER_OBSIDIAN/01_💼 Trabajo/03_🎯 Postulaciones/POSTULACIONES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PROPIO"
+              "title": "POSTULACIONES"
             }
+          },
+          {
+            "id": "527f255ceaa0f426",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/07 - Prototipo funcional.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07 - Prototipo funcional"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -71,9 +84,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "datos prueba",
+                "query": "",
                 "matchingCase": false,
-                "explainSearch": true,
+                "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -217,51 +230,44 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "685f6cdc392234f2",
+  "active": "527f255ceaa0f426",
   "lastOpenFiles": [
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos/STA.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos/UAT.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Accesos",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/04_Tickets/MAJO Activar accesos direcciones y grupos.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/03_🎯 Postulaciones/Senior Java Developer - Coforge BCP/Postulacion.md.tmp.17844.293bfe499a83",
-    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/08_ Bases de Datos/05 - NoSQL desde Java.md.tmp.17844.6e8495e3022a",
-    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/08_ Bases de Datos/05 - NoSQL desde Java.md.tmp.17844.e1cfc5fb5d05",
-    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/07 - Modular Monolith.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/06 - CQRS en Java.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/02 - Clean Architecture en Java.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/11_ Arquitectura/01 - Capas y Responsabilidades.md",
-    "JUBER_OBSIDIAN/03_🤖 Claude Usage/Claude_Usage.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/02 - Pods Deployments y ReplicaSets.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/02 - Pods Deployments y ReplicaSets.md.tmp.44272.b3b6104c0502",
-    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/01 - Fundamentos y Arquitectura.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/KUBERNETES.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes/KUBERNETES.md.tmp.44272.bfe4cc1f6838",
-    "JUBER_OBSIDIAN/02_📚 Estudio/16_☸️ Kubernetes",
-    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/GitHub Actions CI CD.md.tmp.44272.3b98484bca9a",
-    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/06 - Reusable Workflows y Composite Actions.md",
-    "JUBER_OBSIDIAN/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/06 - Reusable Workflows y Composite Actions.md.tmp.44272.9286a5005af2",
-    "JUBER_OBSIDION/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/05 - Deploy con GitHub Actions.md.tmp.44272.ccf7b6aa2839",
-    "JUBER_OBSIDION/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/04 - Secrets Variables y Environments.md.tmp.44272.ee86209c20d4",
-    "JUBER_OBSIDION/02_📚 Estudio/08_🌿 Git/08_ CI CD GitHub Actions/03 - CI Basico Build Test Lint.md.tmp.44272.16360129fa93",
-    "JUBER_OBSIDIN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
-    "JUBER_OBSIDION/03_🤖 Claude Usage/Control_Semanal.md",
-    "JUBER_OBSIDION/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md",
-    "JUBER_OBSIDION/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md",
-
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Links.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/00_Referencia/Datos prueba.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/03_Actividades/Diario.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-direcciones-grupos-log.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/04_Tickets",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/RQ-2026-08-tarjeta-codigo-seguimiento.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md",
-    "JUBER_OBSIDIAN/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/Requerimientos.base"
-  ]
-    "JUBER_OBSIDIAN/01_💼 Trabajo/02_💼 Freelance/01_👥 Clientes/Sebastian - Apolo/StaffTrainingPlatform/07_📊 Estimación/12 - Checklist de Progreso.md",
-    "JUBER_OBSIDION/01_💼 Trabajo/01_🏢 PLUXEE/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md",
-    "JUBER_OBSIDION/01_💼 Trabajo/01_🏢 PLUXEE/02_Requerimientos/_Plantilla.md"
-  ],
-
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/04 - Decisiones pendientes.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/03 - Reglas de negocio.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/02 - Mapa de funcionalidades.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/06 - Registro de cambios.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/07 - Prototipo funcional.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Biblioteca de Ejercicios.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/07 - Prototipo funcional.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/NeedDoer.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/05 - Roadmap y backlog.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer/01 - Visión y alcance.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/NeedDoer",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/04 - Decisiones pendientes.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/01 - Visión y alcance.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/05 - Roadmap y backlog.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/06 - Registro de cambios.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/03 - Reglas de negocio.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/02 - Mapa de funcionalidades.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/App friendCash.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya/Chambita Ya.md",
+    "JUBER_OBSIDIAN/05_🛠️ Proyectos/02_🚧 En Curso/PROPIO/Chambita Ya",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios/Dominadas.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios/Dead bug.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios/Curl femoral con banda y nórdico.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios/Curl con barra Z.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios/Chin-ups (dominadas supinas).md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios/Boxeo - saco y sombra.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Rutina Semanal de Ejercicio.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Registro de Entrenamiento.md",
+    "JUBER_OBSIDIAN/04_💪 Salud/Biblioteca de Ejercicios.md.tmp.56872.774244f7674b",
+    "JUBER_OBSIDIAN/04_💪 Salud/Rutina Semanal de Ejercicio.md.tmp.56872.f95b047660da",
+    "JUBER_OBSIDIAN/04_💪 Salud/Rutina Semanal de Ejercicio.md.tmp.56872.96ebc9977ebb",
+    "JUBER_OBSIDIAN/04_💪 Salud/Ejercicios",
+    "JUBER_OBSIDIAN/04_💪 Salud",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/sedU29x9r",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/20_ System Design/sedEdo5ku",
+    "JUBER_OBSIDIAN/02_📚 Estudio/03_☕ Java/19_ Cloud para Java/seduGBM9m",
     "JUBER_OBSIDIAN/02_📚 Estudio/06_🎓 Cursos/01_📚 DevTalles/ARCHIVOS/gitRecomendaciones.png",
     "JUBER_OBSIDIAN/02_📚 Estudio/06_🎓 Cursos/01_📚 DevTalles/ARCHIVOS/gitHubImage.jpg",
     "JUBER_OBSIDIAN/02_📚 Estudio/05_🏗️ Arquitectura/05_📚 General/Imagenes/1742435149294.gif",

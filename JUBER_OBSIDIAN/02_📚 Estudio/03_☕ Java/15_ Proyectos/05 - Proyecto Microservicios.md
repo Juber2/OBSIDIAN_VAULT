@@ -37,3 +37,9 @@ Construir un sistema pequeno con servicios separados y comunicacion sincrona/asi
 - [ ] Hay eventos de dominio.
 - [ ] Hay resiliencia ante fallos.
 - [ ] Puedo levantar todo localmente.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

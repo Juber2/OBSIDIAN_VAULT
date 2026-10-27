@@ -143,3 +143,13 @@ numeros.parallelStream().forEach(resultado::add); // race condition
 > Usar `collect(Collectors.toList())` en su lugar.
 
 ## 📌 Notas Rápidas
+- La composición de funciones (`Function.andThen`, `Function.compose`) permite construir pipelines de transformación reutilizables sin escribir un método por cada combinación.
+- La inmutabilidad (records, `List.of()`, `Collections.unmodifiableList()`) es la base que hace segura la programación funcional en un lenguaje con estado mutable como Java.
+- `Collectors` personalizados (`Collector.of(...)`) permiten construir reducciones custom más allá de `toList()`/`groupingBy()`, para casos que no cubre la librería estándar.
+- El estilo funcional favorece expresividad sobre performance bruta en casos simples — para hot paths críticos, medir antes de asumir que un stream es igual de rápido que un bucle imperativo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

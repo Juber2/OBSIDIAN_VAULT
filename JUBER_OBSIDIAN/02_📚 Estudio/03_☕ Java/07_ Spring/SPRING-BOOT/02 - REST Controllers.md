@@ -151,3 +151,13 @@ public class UsuarioController {
 ```
 
 ## 📌 Notas Rápidas
+- `@RestController` = `@Controller` + `@ResponseBody` — sin esta combinación, Spring intentaría resolver una vista (Thymeleaf/JSP) en vez de serializar el objeto devuelto a JSON.
+- `ResponseEntity` da control explícito del status code y headers; devolver el objeto directo (sin `ResponseEntity`) siempre responde 200, salvo que se use `@ResponseStatus` a nivel método.
+- PUT es idempotente (reemplaza el recurso completo); PATCH es para actualización parcial — usar el verbo correcto es parte de diseñar una API REST bien hecha, no un detalle menor.
+- Versionar la API en la URL (`/api/v1/...`) es la estrategia más simple; alternativas más avanzadas usan headers (`Accept: application/vnd.api.v2+json`).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

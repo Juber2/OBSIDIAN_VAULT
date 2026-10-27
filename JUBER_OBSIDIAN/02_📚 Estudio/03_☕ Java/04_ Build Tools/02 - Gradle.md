@@ -108,3 +108,13 @@ gradlew.bat ... # Windows
 | Empresas | Muy común | Creciendo |
 
 ## 📌 Notas Rápidas
+- `implementation` vs `api`: con `implementation`, si tu módulo depende de una librería, los módulos que dependen de vos NO ven esa librería en su classpath — mejor encapsulamiento que Maven por defecto.
+- El caché de builds de Gradle (incremental + build cache) es la razón principal de que sea más rápido que Maven en proyectos grandes, sobre todo en CI con cache compartido entre builds.
+- Siempre commitear el `gradlew`/`gradlew.bat` y la carpeta `gradle/wrapper/` al repo — así cualquiera clona y compila sin instalar Gradle manualmente.
+- Requisito indispensable de este puesto menciona "Maven y Gradle" — en la práctica un equipo usa uno u otro por proyecto, rara vez ambos a la vez; lo importante es entender los conceptos que comparten (dependencias, scopes/configurations, ciclo de vida).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

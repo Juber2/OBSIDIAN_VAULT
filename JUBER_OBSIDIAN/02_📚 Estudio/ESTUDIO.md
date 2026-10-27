@@ -1,10 +1,16 @@
 ---
 tags:
   - Estudio
-Actualizado: 2026-07-29
+Actualizado: 2026-08-24
 ---
 
 #Principal
+
+## Plan global
+
+| Nota | Qué es |
+|---|---|
+| [[PLAN DE CAPACITACION]] | **Plan de capacitación 2026** — qué aprender, en qué semana y con qué entregable, de agosto a diciembre. Empezá por acá; los roadmaps de abajo son el material que consume. |
 
 ## Roadmaps principales
 
@@ -21,6 +27,8 @@ Actualizado: 2026-07-29
 | 9 | Linux | [[LINUX]] |
 | 10 | PostgreSQL | [[POSTGRESQL]] |
 | 11 | SQL Server | [[SQL SERVER]] |
+| 12 | ChatGPT para programar | [[CHATGPT]] |
+| 13 | Claude para programar | [[CLAUDE PARA PROGRAMAR]] |
 
 ## Arquitectura y bases
 

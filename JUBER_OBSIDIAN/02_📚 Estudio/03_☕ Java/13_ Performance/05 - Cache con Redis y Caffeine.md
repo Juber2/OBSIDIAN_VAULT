@@ -51,3 +51,9 @@ public void updateUser(Long id, UpdateUserRequest request) {
 - [ ] Defino estrategia de invalidacion.
 - [ ] Mido hit ratio.
 - [ ] No cacheo errores permanentes sin pensar.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -167,3 +167,13 @@ public void processOutboxEvents() {
 ```
 
 ## 📌 Notas Rápidas
+- "Database per service" es lo que hace inevitable la consistencia eventual y el patrón SAGA — no es una elección arbitraria, es consecuencia directa de dar autonomía real a cada servicio (ver [[ARQUITECTURA]]).
+- El Outbox Pattern resuelve un problema muy concreto: sin él, un fallo entre "guardar en BD" y "publicar en Kafka" deja el sistema inconsistente sin forma de detectarlo — con outbox, ambas cosas ocurren en la misma transacción local.
+- Idempotencia en los consumers no es opcional en sistemas con colas/eventos — los brokers garantizan "at-least-once" en la práctica, así que los duplicados van a pasar tarde o temprano.
+- Antes de partir un monolito en microservicios, vale preguntarse si el problema real es de escala de equipo/despliegue (donde microservicios ayuda) o de mal diseño interno (donde Hexagonal/Clean dentro del mismo monolito puede alcanzar sin el costo operacional extra).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -114,3 +114,13 @@ calc.calcularPrecioFinal(150.0); // 112.5
 ```
 
 ## 📌 Notas Rápidas
+- Con lambdas y functional interfaces, Strategy en Java moderno casi no necesita clases separadas — una `Map<String, Function<...>>` de estrategias suele bastar.
+- Reemplaza directamente cadenas largas de `if/else` o `switch` que eligen comportamiento — si ves un `switch` que crece cada vez que se agrega un caso de negocio, es candidato a Strategy.
+- Se combina naturalmente con Spring: inyectar `List<EstrategiaX>` y elegir la correcta en runtime por un identificador, en vez de un `if` gigante.
+- Distinto de Template Method: Strategy cambia el **algoritmo completo** vía composición; Template Method fija la estructura y varía **pasos puntuales** vía herencia.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

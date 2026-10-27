@@ -123,3 +123,13 @@ application-secrets.yml
 ```
 
 ## 📌 Notas Rápidas
+- Organización "por feature" escala mejor en microservicios/equipos grandes — reduce el acoplamiento cognitivo de tener que saltar entre 5 paquetes por cada cambio de una funcionalidad.
+- `src/test/java` debe reflejar el mismo paquete que la clase que testea — convención que además permite acceder a métodos `package-private` desde el test.
+- `application-{profile}.properties` sobrescribe solo las propiedades definidas ahí — el `application.properties` base sigue aplicando para el resto.
+- Nunca commitear `application-secrets.yml`/`.env` con credenciales reales — deben ir al `.gitignore` desde el día uno del proyecto.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

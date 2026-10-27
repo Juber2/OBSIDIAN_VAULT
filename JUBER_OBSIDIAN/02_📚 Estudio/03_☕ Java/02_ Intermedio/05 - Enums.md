@@ -160,3 +160,13 @@ horarios.put(DiaSemana.LUNES, "9:00 - 18:00");
 > ```
 
 ## 📌 Notas Rápidas
+- Un enum puede tener atributos, constructor (siempre privado) y métodos, no es solo una lista de constantes.
+- `values()` devuelve un array con todas las constantes en orden de declaración; `ordinal()` da su posición (evitar depender de esto para lógica de negocio).
+- Se puede usar `switch` sobre un enum sin prefijo (`case LUNES:` en vez de `case DiaSemana.LUNES:`).
+- Un enum puede implementar interfaces, y cada constante puede tener su propio cuerpo (override) si necesita comportamiento distinto.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

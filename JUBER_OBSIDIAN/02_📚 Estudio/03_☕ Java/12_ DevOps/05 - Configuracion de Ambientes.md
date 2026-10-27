@@ -41,3 +41,9 @@ spring:
 - [ ] Las credenciales no estan versionadas.
 - [ ] Cada ambiente tiene perfil claro.
 - [ ] La configuracion esta documentada.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

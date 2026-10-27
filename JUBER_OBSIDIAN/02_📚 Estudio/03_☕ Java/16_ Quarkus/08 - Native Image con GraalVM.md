@@ -97,3 +97,9 @@ La imagen final resultante es drásticamente más chica y liviana que una imagen
 - [ ] Sé cuándo un error es por reflection no declarada y cómo resolverlo con `@RegisterForReflection`.
 - [ ] Puedo armar un Dockerfile multi-stage para native.
 - [ ] Tengo criterio para decidir JVM mode vs Native mode según el caso real (no por moda).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

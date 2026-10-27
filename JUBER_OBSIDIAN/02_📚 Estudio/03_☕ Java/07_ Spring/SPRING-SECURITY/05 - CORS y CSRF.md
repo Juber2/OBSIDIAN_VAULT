@@ -260,3 +260,13 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 ```
 
 ## 📌 Notas Rápidas
+- CORS es una protección del **navegador**, no del servidor — un cliente no-browser (Postman, otro backend) nunca se ve afectado por configuración CORS, es fácil confundir esto en entrevista.
+- El preflight `OPTIONS` solo se dispara para requests "no simples" (con métodos como PUT/DELETE, o headers custom como `Authorization`) — un GET simple sin headers extra no lo dispara.
+- CSRF y CORS resuelven problemas distintos: CORS controla **qué orígenes pueden leer** la respuesta; CSRF previene que un sitio ajeno **dispare acciones** aprovechando cookies de sesión ya autenticadas.
+- Nunca usar `allowedOrigins("*")` junto con `allowCredentials(true)` — el estándar CORS directamente lo prohíbe (riesgo de seguridad), hay que listar orígenes explícitos.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

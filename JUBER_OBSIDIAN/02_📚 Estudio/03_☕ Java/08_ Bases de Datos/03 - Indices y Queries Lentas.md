@@ -39,3 +39,9 @@ Usa `EXPLAIN` o `EXPLAIN ANALYZE` para ver como la base ejecuta una query.
 - [ ] Creo indices para patrones reales de consulta.
 - [ ] No indexo todo.
 - [ ] Mido antes y despues.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -95,3 +95,13 @@ throw new SaldoInsuficienteException("Saldo insuficiente para realizar la operac
 > El catch más específico debe ir primero. Si pones `catch (Exception e)` antes que los específicos, nunca llegarás a ellos.
 
 ## 📌 Notas Rápidas
+- Checked exceptions (`IOException`) se deben declarar o manejar obligatoriamente; unchecked (`RuntimeException` y sus hijas) no.
+- `try-with-resources` cierra automáticamente cualquier `AutoCloseable`, incluso si hay una excepción — preferible a `finally` manual.
+- Crear excepciones propias extendiendo `RuntimeException` (no checked) es la práctica más común en backends modernos, para no forzar `throws` en cada firma.
+- Nunca capturar `Exception` o `Throwable` genérico y "tragarte" el error sin loguearlo — dificulta muchísimo el debugging en producción.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

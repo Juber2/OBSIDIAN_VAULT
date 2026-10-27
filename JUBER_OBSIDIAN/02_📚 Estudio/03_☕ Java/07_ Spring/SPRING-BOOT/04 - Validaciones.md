@@ -156,3 +156,13 @@ public class GlobalExceptionHandler {
 ```
 
 ## 📌 Notas Rápidas
+- `@Valid` valida el objeto completo (incluye validaciones anidadas si el campo interno también tiene `@Valid`); `@Validated` (de Spring, no de Bean Validation) es necesario para validar `@RequestParam`/`@PathVariable` sueltos y para grupos de validación.
+- Un `ConstraintValidator` custom puede inyectar dependencias (`@Autowired`) porque Spring lo gestiona como bean — útil para validaciones que necesitan consultar la base de datos (ej. email único).
+- Los mensajes de `@NotBlank`/`@Email`/etc. se pueden externalizar a un `messages.properties` para soportar i18n en vez de hardcodearlos en la anotación.
+- Validar en el DTO de entrada (borde de la API) no reemplaza validar invariantes de negocio dentro del dominio — son capas de protección distintas y complementarias.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

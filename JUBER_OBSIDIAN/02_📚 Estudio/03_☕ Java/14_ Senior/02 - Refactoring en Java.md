@@ -44,3 +44,9 @@ public Money total() {
 - [ ] El codigo resultante expresa mejor la intencion.
 - [ ] No cree abstracciones prematuras.
 - [ ] Los tests siguen pasando.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

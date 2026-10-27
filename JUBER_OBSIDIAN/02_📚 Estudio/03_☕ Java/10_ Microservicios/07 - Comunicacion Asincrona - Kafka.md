@@ -267,3 +267,13 @@ public class KafkaTopicConfig {
 ```
 
 ## 📌 Notas Rápidas
+- Usar el ID de negocio (`orderId`) como key del mensaje garantiza que todos los eventos de ese pedido caigan en la misma partición, preservando su orden relativo — crítico cuando el orden de eventos importa (ej. `OrderCreated` antes que `OrderCancelled`).
+- El relanzamiento de la excepción en el consumer (`throw ex`) es lo que activa el mecanismo de reintentos configurado en el error handler — tragarse la excepción silenciosamente rompe esa garantía.
+- Este archivo repite el patrón Outbox ya visto en [[01 - Fundamentos Microservicios]] — es intencional, es la solución estándar al mismo problema (consistencia entre BD y evento) en cualquier arquitectura basada en eventos.
+- Configurar particiones y factor de replicación vía código (`NewTopic` bean) versiona la infraestructura de mensajería junto con la app, en vez de crear topics manualmente y arriesgarse a inconsistencias entre ambientes.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

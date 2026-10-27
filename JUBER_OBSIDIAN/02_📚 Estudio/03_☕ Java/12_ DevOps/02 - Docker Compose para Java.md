@@ -46,3 +46,9 @@ services:
 - [ ] Las variables estan claras.
 - [ ] Los datos locales no se mezclan con produccion.
 - [ ] Hay healthcheck si la dependencia tarda en arrancar.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

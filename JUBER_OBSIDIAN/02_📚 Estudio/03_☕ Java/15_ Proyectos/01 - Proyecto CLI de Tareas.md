@@ -34,3 +34,9 @@ Crear una aplicacion de consola para gestionar tareas.
 - [ ] Hay tests unitarios para la logica.
 - [ ] Los errores se muestran de forma clara.
 - [ ] El README explica como ejecutar.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

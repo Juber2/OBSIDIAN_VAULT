@@ -126,3 +126,13 @@ public class MiServicio { }
 > Es difícil de mockear. Preferir inyección de dependencias (Spring) sobre Singleton manual.
 
 ## 📌 Notas Rápidas
+- El holder idiom es la forma "manual" más recomendada: lazy, thread-safe sin `synchronized` en cada llamada, y simple de leer.
+- En Spring casi nunca escribís Singleton a mano — el contenedor IoC ya gestiona el scope singleton por defecto para cada `@Bean`/`@Component`.
+- Un enum singleton resuelve gratis los problemas de serialización y ataques por Reflection que rompen las otras implementaciones.
+- Preguntá primero "¿esto necesita ser realmente global?" — abusar de Singleton genera acoplamiento oculto y dificulta testear en paralelo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

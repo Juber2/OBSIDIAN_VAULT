@@ -57,3 +57,9 @@ Usar DDD para renombrar carpetas sin modelar reglas reales. DDD se justifica cua
 - [ ] Protejo invariantes dentro del agregado.
 - [ ] No expongo listas mutables del dominio.
 - [ ] El lenguaje del codigo se parece al lenguaje del negocio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

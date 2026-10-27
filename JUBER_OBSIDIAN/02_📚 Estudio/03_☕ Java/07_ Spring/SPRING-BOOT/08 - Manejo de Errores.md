@@ -146,3 +146,13 @@ public class UsuarioService {
 ```
 
 ## 📌 Notas Rápidas
+- Un `@RestControllerAdvice` global evita repetir `try/catch` en cada controller — centraliza la traducción de excepciones de dominio a respuestas HTTP.
+- El handler genérico de `Exception.class` debe loguear el stack trace completo (`log.error`) pero **nunca** devolverlo al cliente — filtrar detalles internos es un riesgo de seguridad.
+- `ProblemDetail` (RFC 7807, nativo desde Spring Boot 3) es el estándar moderno de error response — preferible a un DTO de error propio si no hay requisitos específicos de formato.
+- Las excepciones de dominio no deberían extender `Exception` (checked) sino `RuntimeException` — evita forzar `throws` en cada firma de método de servicio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

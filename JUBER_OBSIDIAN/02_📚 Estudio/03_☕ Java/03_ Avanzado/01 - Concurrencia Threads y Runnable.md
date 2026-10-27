@@ -138,3 +138,13 @@ Dos hilos esperando mutuamente el recurso del otro.
 > Si un hilo está `sleep()` dentro de un bloque `synchronized`, otros hilos siguen bloqueados.
 
 ## 📌 Notas Rápidas
+- Implementar `Runnable` es preferible a extender `Thread` — permite que la clase herede de otra cosa, y separa "qué se ejecuta" de "cómo se ejecuta".
+- `volatile` garantiza visibilidad entre hilos (evita que uno vea un valor cacheado viejo), pero no atomicidad — para contadores concurrentes usar `AtomicInteger`/`AtomicLong`.
+- `synchronized` garantiza tanto exclusión mutua como visibilidad, pero tiene mayor costo que alternativas lock-free cuando hay alta contención.
+- Antes de multithreading manual, evaluar si `CompletableFuture`, `ExecutorService` o (Java 21+) Virtual Threads resuelven el problema con menos código propenso a errores.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

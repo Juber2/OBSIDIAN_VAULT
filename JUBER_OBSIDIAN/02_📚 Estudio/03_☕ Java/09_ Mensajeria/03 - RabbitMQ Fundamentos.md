@@ -150,3 +150,13 @@ Ideal para: llamadas request/response async
 ```
 
 ## 📌 Notas Rápidas
+- La diferencia más preguntada en entrevista: Kafka es pull-based con persistencia y replay del historial (bueno para streaming/analítica); RabbitMQ es push-based, el mensaje se borra al confirmarse (bueno para colas de trabajo clásicas).
+- Topic Exchange con wildcards (`*`/`#`) da un enrutamiento mucho más flexible que Direct — común para sistemas de logs o eventos categorizados por múltiples dimensiones.
+- Sin Dead Letter Exchange configurado, un mensaje que falla repetidamente simplemente se pierde (o queda reintentando infinito según la config) — el DLX es la práctica estándar para no perder visibilidad de fallos.
+- `prefetch=1` evita que un consumer lento acapare muchos mensajes sin procesarlos mientras otros consumers están ociosos — clave para "fair dispatch" en colas de trabajo con múltiples workers.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

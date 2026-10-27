@@ -133,3 +133,13 @@ static void properties(DynamicPropertyRegistry registry) {
 | Uso recomendado | Tests unitarios de repo | Tests de integración reales |
 
 ## 📌 Notas Rápidas
+- `withReuse(true)` + configurar `testcontainers.reuse.enable=true` en `~/.testcontainers.properties` evita levantar un contenedor nuevo en cada ejecución local — acelera mucho el ciclo de desarrollo.
+- En CI, cada pipeline suele levantar contenedores frescos (sin reuse) porque cada runner es efímero — el ahorro de reuse aplica sobre todo en local.
+- Preferir TestContainers sobre H2 cuando el código usa features específicas del motor real (JSON columns, funciones nativas de Postgres) que H2 no replica fielmente.
+- Es la forma estándar actual de testear integraciones con Kafka/Redis/Mongo sin depender de un servicio compartido en un ambiente de test remoto, evitando tests que "a veces fallan" por estado compartido entre corridas.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -49,3 +49,9 @@ Para un dev que ya domina Spring, aprender Quarkus no es empezar de cero: los co
 - [ ] Puedo argumentar con datos (no moda) cuándo usar Quarkus vs Spring Boot.
 - [ ] Entiendo que Spring Boot 3+ también soporta compilación nativa, y en qué se diferencia del approach de Quarkus.
 - [ ] Sé identificar si un proyecto real se beneficiaría de migrar o no.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

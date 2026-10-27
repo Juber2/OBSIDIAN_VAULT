@@ -115,3 +115,13 @@ ServicioUsuario proxy = (ServicioUsuario) Proxy.newProxyInstance(
 | Conocimiento | Puede controlar cuándo/si delegar | Siempre delega |
 
 ## 📌 Notas Rápidas
+- Es el mecanismo interno detrás de casi toda la "magia" de Spring: `@Transactional`, `@Cacheable`, `@Async` funcionan porque Spring genera un proxy dinámico alrededor del bean real.
+- Dos formas de proxy en Spring: JDK Dynamic Proxy (requiere que la clase implemente una interfaz) y CGLIB (genera una subclase, funciona sin interfaz) — Spring Boot usa CGLIB por defecto.
+- Un error clásico: llamar a un método `@Transactional` desde otro método de la **misma clase** no pasa por el proxy — la transacción no se aplica (self-invocation problem).
+- Distinto de Adapter: Proxy mantiene la **misma interfaz** que el objeto real; Adapter traduce entre interfaces **distintas**.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

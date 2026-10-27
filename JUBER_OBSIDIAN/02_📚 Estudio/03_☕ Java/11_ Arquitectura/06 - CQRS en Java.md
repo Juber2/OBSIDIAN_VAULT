@@ -46,3 +46,9 @@ Si tu sistema es CRUD pequeno, CQRS completo puede meter complejidad innecesaria
 - [ ] Las queries devuelven DTOs de lectura.
 - [ ] Las escrituras validan invariantes.
 - [ ] No uso CQRS como excusa para duplicar todo sin necesidad.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

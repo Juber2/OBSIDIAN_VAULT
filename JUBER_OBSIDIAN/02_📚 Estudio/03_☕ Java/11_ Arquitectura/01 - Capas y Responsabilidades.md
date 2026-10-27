@@ -60,3 +60,9 @@ El controller esta recibiendo entidad de base de datos, decide el caso de uso y 
 - [ ] Use case no depende de HTTP.
 - [ ] Dominio no depende de Spring.
 - [ ] Infraestructura implementa contratos, no define el negocio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

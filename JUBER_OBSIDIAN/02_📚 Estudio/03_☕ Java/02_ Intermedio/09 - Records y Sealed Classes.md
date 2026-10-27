@@ -161,3 +161,20 @@ double area = switch (figura) {
 > Implícitamente extienden `java.lang.Record`. Sí pueden implementar interfaces.
 
 ## 📌 Notas Rápidas
+- Un `record` genera automáticamente constructor, getters (sin prefijo `get`), `equals()`, `hashCode()` y `toString()` — ideal para DTOs.
+- Se puede agregar validación en un "compact constructor" sin repetir la lista de parámetros:
+  ```java
+  public record Rango(int min, int max) {
+      public Rango {
+          if (min > max) throw new IllegalArgumentException("min > max");
+      }
+  }
+  ```
+- `sealed` restringe qué clases pueden extender/implementar una clase o interface (`permits`), habilitando pattern matching exhaustivo en `switch` sin necesitar `default`.
+- Records + sealed classes + pattern matching en `switch` (Java 21) es la base para modelar dominios cerrados de forma segura, similar a data classes + sealed classes en Kotlin.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -233,3 +233,13 @@ public static boolean hasRole(String role) {
 ```
 
 ## 📌 Notas Rápidas
+- `@PreAuthorize` es en el fondo AOP (ver [[04 - AOP]]) — Spring intercepta la llamada al método antes de ejecutarlo, igual mecanismo que `@Transactional`.
+- Roles (`ROLE_ADMIN`) son para categorías amplias de usuario; Authorities granulares (`users:delete`) dan control fino tipo RBAC/permission-based — un sistema real suele combinar ambos.
+- `@PostAuthorize` es más costoso que `@PreAuthorize` porque el método ya se ejecutó antes de verificar el permiso — usarlo solo cuando la decisión de autorización depende del resultado (ej. "es dueño del recurso devuelto").
+- Autorización a nivel de método (`@PreAuthorize`) y a nivel de URL (`SecurityFilterChain`) son complementarias, no excluyentes — la de URL es la primera barrera, la de método da control más fino sobre casos específicos (ej. "solo el dueño del recurso").
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

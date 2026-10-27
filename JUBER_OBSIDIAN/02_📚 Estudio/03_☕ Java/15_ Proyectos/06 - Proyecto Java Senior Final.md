@@ -43,3 +43,9 @@ Crear una plataforma backend completa con calidad de portafolio senior.
 - [ ] Tiene cobertura de casos criticos.
 - [ ] Explica tradeoffs.
 - [ ] Se puede mostrar en entrevista.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

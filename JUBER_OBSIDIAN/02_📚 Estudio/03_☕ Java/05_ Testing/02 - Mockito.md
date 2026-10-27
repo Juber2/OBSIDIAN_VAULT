@@ -159,3 +159,13 @@ spy.enviar("destino"); // usa la implementación real
 > Para void usar `doThrow().when()` o `doNothing().when()`, no `when().thenReturn()`.
 
 ## 📌 Notas Rápidas
+- `@Mock` crea un doble completamente falso (todos los métodos devuelven default/null salvo que se configuren); `@Spy` envuelve un objeto real y solo sobrescribe lo que le indiques.
+- `verifyNoMoreInteractions()` ayuda a detectar llamadas no esperadas, pero usarlo en exceso puede volver los tests frágiles ante cambios menores — aplicarlo con criterio, no en todos los tests.
+- Mockear clases `final` o métodos `static` requiere `mockito-inline` (no el core) — antes de Mockito 5 esto no era posible directamente.
+- Evitar mockear tipos que no controlás (ej. clases del JDK) — es señal de que falta una capa de abstracción propia (Adapter) entre tu código y esa dependencia externa.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

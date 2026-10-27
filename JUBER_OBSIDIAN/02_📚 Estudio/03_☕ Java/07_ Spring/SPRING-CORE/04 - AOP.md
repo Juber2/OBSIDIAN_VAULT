@@ -161,3 +161,13 @@ public UsuarioResponse crear(RegistroRequest request) { ... }
 > Spring AOP usa proxies que no pueden interceptar llamadas internas del mismo objeto ni métodos privados.
 
 ## 📌 Notas Rápidas
+- `@Transactional`, `@Cacheable`, `@Async` y `@CircuitBreaker` son todos AOP aplicado por Spring internamente — entender AOP explica por qué existe el "self-invocation problem" en todos ellos por igual.
+- `@Around` es el advice más poderoso (controla si el método se ejecuta, puede modificar argumentos/resultado) pero también el más fácil de usar mal — para casos simples, `@Before`/`@AfterReturning` son más claros de leer.
+- El weaving en Spring AOP ocurre en runtime vía proxies (a diferencia de AspectJ, que teje el bytecode en compile-time) — más simple pero con la limitación de que solo intercepta llamadas externas al bean, no internas.
+- Una anotación custom + `@Around` con `@annotation(...)` como pointcut es el patrón estándar para funcionalidad transversal reutilizable (auditoría, rate limiting, métricas) sin ensuciar el código de negocio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

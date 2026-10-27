@@ -133,3 +133,13 @@ public class EmailListener {
 ```
 
 ## 📌 Notas Rápidas
+- Spring Application Events (`ApplicationEventPublisher` + `@EventListener`) es Observer nativo del framework — evita escribir el mecanismo de suscripción a mano.
+- Es la base conceptual de Event-Driven Architecture y de mensajería (Kafka/RabbitMQ) — la diferencia es que ahí el "Subject" y los "Observers" viven en procesos/servicios distintos, no en el mismo objeto en memoria.
+- Cuidado con el orden de notificación si los observers tienen dependencias entre sí — el patrón no garantiza orden salvo que lo implementes explícitamente.
+- Un observer que lanza una excepción puede frenar la notificación al resto — en Spring, `@EventListener` con `@Async` desacopla eso (a costa de perder el manejo síncrono de errores).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

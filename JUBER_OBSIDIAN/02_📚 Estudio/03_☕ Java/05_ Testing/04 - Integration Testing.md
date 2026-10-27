@@ -164,3 +164,13 @@ class ApiTest {
 ```
 
 ## 📌 Notas Rápidas
+- `@WebMvcTest` es más rápido que `@SpringBootTest` porque no levanta toda la app (base de datos, seguridad completa, etc.) — usarlo cuando solo se necesita testear la capa de controllers.
+- `@Transactional` en un test hace rollback automático al terminar — evita tener que limpiar manualmente los datos insertados en cada test.
+- Seguir la pirámide de testing (muchos unitarios, algunos de integración, pocos E2E) evita suites de test lentas que desincentivan correrlas seguido.
+- `MockMvc` testea la capa web sin necesitar un servidor HTTP real levantado — más rápido que `TestRestTemplate` con `RANDOM_PORT`.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

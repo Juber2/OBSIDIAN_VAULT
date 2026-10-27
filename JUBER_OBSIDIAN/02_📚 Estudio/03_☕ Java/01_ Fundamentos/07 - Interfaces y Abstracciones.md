@@ -94,4 +94,31 @@ public class SuperHeroe implements Volable, Corrible, Nadable {
 
 ## ⚠️ Errores Comunes
 
+> [!warning] Conflicto de métodos `default` al implementar dos interfaces
+> Si dos interfaces tienen un método `default` con la misma firma, la clase debe sobrescribirlo explícitamente para resolver la ambigüedad.
+> ```java
+> interface A { default void hola() { System.out.println("A"); } }
+> interface B { default void hola() { System.out.println("B"); } }
+> class C implements A, B {
+>     @Override
+>     public void hola() { A.super.hola(); } // hay que elegir explícito
+> }
+> ```
+
+> [!warning] Intentar instanciar directamente
+> ```java
+> Figura f = new Figura("rojo"); // ❌ no se puede instanciar una clase abstracta
+> Volable v = new Volable(); // ❌ tampoco una interface
+> ```
+
 ## 📌 Notas Rápidas
+- Una interface puede tener campos, pero implícitamente son `public static final` (constantes).
+- Desde Java 9, las interfaces también pueden tener métodos `private` (para reutilizar lógica entre métodos `default`).
+- Preferí interfaces sobre clases abstractas cuando no necesitás compartir estado/implementación — es más flexible (una clase puede implementar varias).
+- Las clases abstractas sí pueden tener constructor, aunque no se instancien directo — se ejecuta cuando una subclase concreta se instancia.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

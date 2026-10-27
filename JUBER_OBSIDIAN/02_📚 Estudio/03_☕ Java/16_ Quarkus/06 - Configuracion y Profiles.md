@@ -113,3 +113,9 @@ Para producción, las credenciales no van en el archivo de properties commiteado
 - [ ] Uso `@ConfigProperty` y `@ConfigMapping` según corresponda.
 - [ ] Entiendo el orden de precedencia de MicroProfile Config.
 - [ ] No tengo secretos de producción hardcodeados en el repo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

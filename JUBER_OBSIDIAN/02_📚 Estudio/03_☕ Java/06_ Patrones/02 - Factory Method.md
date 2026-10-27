@@ -115,3 +115,13 @@ public class NotificadorFactory {
 ```
 
 ## 📌 Notas Rápidas
+- La variante "Static Factory Method" es la más usada en código real Java (`List.of()`, `Optional.of()`) — más simple que la jerarquía completa con subclases.
+- En Spring, inyectar `List<Interfaz>` para que el framework junte automáticamente todos los beans que implementan una interfaz es el equivalente idiomático a una factory.
+- Factory Method resuelve "qué instanciar" sin que el código cliente conozca las clases concretas — clave para cumplir el principio de inversión de dependencias.
+- No confundir con Abstract Factory: acá se crea **un** tipo de producto, no una familia completa.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

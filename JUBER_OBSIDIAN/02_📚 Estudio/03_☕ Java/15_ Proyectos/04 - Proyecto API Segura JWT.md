@@ -31,3 +31,9 @@ Construir autenticacion y autorizacion con Spring Security.
 - [ ] Endpoints privados rechazan usuarios anonimos.
 - [ ] Usuarios no acceden recursos ajenos.
 - [ ] No se loguean tokens.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

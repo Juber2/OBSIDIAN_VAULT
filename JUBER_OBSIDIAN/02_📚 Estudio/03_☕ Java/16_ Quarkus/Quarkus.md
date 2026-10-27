@@ -47,3 +47,11 @@ Spring Boot sigue siendo mejor opción cuando el ecosistema/librerías que neces
 ## Referencias base
 - [Quarkus Guides](https://quarkus.io/guides/)
 - [Quarkus - Getting Started](https://quarkus.io/guides/getting-started)
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Quarkus]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

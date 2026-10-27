@@ -146,3 +146,13 @@ Supplier<ArrayList<String>> nuevaLista = ArrayList::new;
 > ```
 
 ## 📌 Notas Rápidas
+- Una functional interface tiene exactamente un método abstracto (`@FunctionalInterface` lo valida en compile-time).
+- Las más usadas del paquete `java.util.function`: `Function<T,R>`, `Supplier<T>`, `Consumer<T>`, `Predicate<T>`, `BiFunction<T,U,R>`.
+- Method references (`Clase::metodo`) son azúcar sintáctico sobre una lambda — `s -> s.toUpperCase()` equivale a `String::toUpperCase`.
+- Una lambda captura variables del entorno por valor (closure) — no puede modificar variables locales externas (deben ser effectively final).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

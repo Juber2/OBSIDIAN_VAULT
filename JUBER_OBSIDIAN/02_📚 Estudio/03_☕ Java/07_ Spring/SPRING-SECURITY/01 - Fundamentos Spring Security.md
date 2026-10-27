@@ -253,3 +253,13 @@ String email = auth.getName();
 > `hasAuthority("ROLE_ADMIN")` busca exacto.
 
 ## 📌 Notas Rápidas
+- La cadena de filtros de Spring Security es en sí misma un Chain of Responsibility (ver [[15 - Chain of Responsibility]]) — cada filtro decide procesar o delegar al siguiente.
+- BCrypt incluye el salt dentro del hash resultante — no hace falta guardar el salt por separado como en implementaciones manuales antiguas.
+- `SessionCreationPolicy.STATELESS` es obligatorio en APIs con JWT — le dice a Spring que no cree ni use `HttpSession`, coherente con la naturaleza stateless del token.
+- Desde Spring Security 6, todo se configura vía `SecurityFilterChain` como `@Bean` — el viejo `WebSecurityConfigurerAdapter` fue eliminado, cualquier tutorial que lo use está desactualizado.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

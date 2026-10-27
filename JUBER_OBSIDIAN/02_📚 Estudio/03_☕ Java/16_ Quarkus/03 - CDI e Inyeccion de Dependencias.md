@@ -133,3 +133,9 @@ public class NotificadorPedido {
 - [ ] Sé resolver ambigüedad de múltiples implementaciones con `@Alternative`/`@Priority`.
 - [ ] Sé usar `@Produces` para beans que no vienen de una clase anotada directamente.
 - [ ] Entiendo CDI events como forma de desacoplar componentes.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -162,3 +162,9 @@ public GroupedOpenApi adminApi() {
 - [ ] Documento controllers con `@Operation` y DTOs con `@Schema`.
 - [ ] Sé configurar el botón de autenticación (bearerAuth) para probar endpoints protegidos.
 - [ ] Deshabilito Swagger UI en producción o lo protejo adecuadamente.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

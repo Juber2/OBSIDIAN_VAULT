@@ -98,3 +98,13 @@ app.render();
 | Uso típico | Un tipo de objeto variable | Varios objetos que deben ser compatibles |
 
 ## 📌 Notas Rápidas
+- Se usa cuando la app debe soportar "familias" intercambiables completas (ej. distintos proveedores de pago, distintos motores de notificación) sin mezclar piezas de familias distintas.
+- Es uno de los patrones creacionales menos usados en backends CRUD típicos — aparece más en frameworks/SDKs multi-proveedor.
+- Cada fábrica concreta agrupa la creación de varios productos relacionados — si solo necesitás crear un tipo de objeto, Factory Method alcanza y es más simple.
+- Común en integraciones con múltiples proveedores cloud (AWS/Azure/GCP) donde cada familia de clientes SDK debe ser consistente entre sí.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

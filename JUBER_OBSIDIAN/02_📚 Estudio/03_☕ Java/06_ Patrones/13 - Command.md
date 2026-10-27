@@ -111,3 +111,13 @@ public class CrearUsuarioHandler {
 ```
 
 ## 📌 Notas Rápidas
+- `Runnable`, `Callable` y cualquier functional interface que "encapsula una acción" son, en esencia, el patrón Command simplificado por lambdas.
+- La parte de **deshacer** (undo) es lo que distingue a Command de simplemente pasar una función — si no necesitás undo/redo/cola de comandos, probablemente no necesitás el patrón completo, alcanza con un `Runnable`.
+- En CQRS, todo Command (`CrearUsuarioCommand`, etc.) es este patrón aplicado a nivel de arquitectura: encapsula la intención de una operación como un objeto de datos inmutable.
+- Útil para colas de trabajo diferido — encapsular la operación como objeto permite serializarla, loguearla o reintentarla más fácilmente que una llamada directa a método.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

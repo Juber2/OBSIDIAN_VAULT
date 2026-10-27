@@ -42,3 +42,9 @@ El Garbage Collector libera memoria de objetos no referenciados. Tuning no signi
 - [ ] Reviso logs de GC.
 - [ ] Ajusto memoria del contenedor.
 - [ ] No cambio flags sin medir.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -142,3 +142,13 @@ try {
 > Si la tarea lanzó una excepción, `get()` la envuelve en `ExecutionException`. Siempre manejarla.
 
 ## 📌 Notas Rápidas
+- `Executors.newFixedThreadPool(n)` es el más usado en producción para tareas CPU/IO acotadas; `newCachedThreadPool()` crea hilos sin límite (riesgo de agotar recursos si hay picos).
+- `submit()` devuelve un `Future` (se puede esperar el resultado o cancelar); `execute()` no devuelve nada, dispara y olvida.
+- Dimensionar el pool según el tipo de carga: para CPU-bound, cerca del número de cores; para IO-bound, se puede sobredimensionar bastante más (los hilos pasan tiempo esperando, no computando).
+- Desde Java 21, para cargas IO-bound masivas, Virtual Threads suele ser mejor opción que ajustar manualmente el tamaño de un pool fijo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

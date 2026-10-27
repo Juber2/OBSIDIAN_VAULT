@@ -38,3 +38,9 @@ Crear una API REST de productos con Spring Boot.
 - [ ] Hay respuestas HTTP correctas.
 - [ ] Hay errores consistentes.
 - [ ] Hay tests.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

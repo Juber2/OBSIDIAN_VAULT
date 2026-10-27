@@ -197,3 +197,13 @@ kafka:
 ```
 
 ## 📌 Notas Rápidas
+- El número de particiones define el techo de paralelismo — se puede aumentar después, pero nunca reducir sin recrear el topic, así que conviene pensar el escalado desde el diseño inicial.
+- Kafka es "pull" (el consumer pide) y persiste los mensajes por un tiempo configurable — a diferencia de RabbitMQ, permite releer el historial (útil para reprocesar o nuevos consumers que necesitan el pasado).
+- `acks=all` + `enable.idempotence=true` es la combinación estándar cuando no se pueden tolerar duplicados ni pérdidas — el costo es menor throughput, trade-off que hay que justificar según el caso.
+- Log compaction (`cleanup.policy=compact`) convierte un topic en algo parecido a una tabla de estado (solo el último valor por key) — patrón común para "topics de estado" tipo caché distribuido, distinto de un topic de eventos tradicional.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

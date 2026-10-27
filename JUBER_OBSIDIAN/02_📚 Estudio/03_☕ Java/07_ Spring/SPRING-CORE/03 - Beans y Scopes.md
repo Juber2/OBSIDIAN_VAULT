@@ -129,3 +129,13 @@ public DataSource dataSourceProd() { ... }
 ```
 
 ## 📌 Notas Rápidas
+- Singleton es el scope correcto para la gran mayoría de beans (services, repositories) — Prototype/Request/Session son excepciones para casos específicos, no la norma.
+- `proxyMode = ScopedProxyMode.TARGET_CLASS` es necesario al inyectar un bean de scope Request/Session dentro de un Singleton — Spring inyecta un proxy que resuelve la instancia real en cada acceso.
+- `@ConditionalOnMissingBean` es el mecanismo que usan las auto-configurations de Spring Boot para no pisar un bean que vos ya definiste manualmente con el mismo tipo.
+- `@Bean` en una clase `@Configuration` da control total sobre la construcción (útil para clases de terceros que no podés anotar con `@Component`); las anotaciones estereotipo son más simples cuando controlás la clase.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -241,3 +241,13 @@ GET /actuator/health
 > Ejemplo: si el pago falla, no basta con un fallback — hay que compensar (no crear el pedido o cancelarlo).
 
 ## 📌 Notas Rápidas
+- Circuit Breaker es en el fondo una variante de State pattern (GoF): CLOSED/OPEN/HALF_OPEN son estados con transiciones bien definidas.
+- Resilience4j reemplazó a Hystrix (deprecado por Netflix) como estándar de facto en el ecosistema Spring/Java para resiliencia.
+- Combinar Circuit Breaker + Retry + Timeout + Bulkhead es lo normal en producción — cada uno protege contra un problema distinto (fallos repetidos, lentitud, sobrecarga, saturación de recursos).
+- No es lo mismo que compensación (SAGA): el Circuit Breaker evita seguir golpeando un servicio caído; la compensación deshace efectos ya aplicados cuando un paso posterior falla — ver [[ARQUITECTURA]].
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

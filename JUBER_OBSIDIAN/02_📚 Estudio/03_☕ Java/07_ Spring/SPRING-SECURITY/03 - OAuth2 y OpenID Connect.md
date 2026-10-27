@@ -283,3 +283,13 @@ public class AuthorizationServerConfig {
 ```
 
 ## 📌 Notas Rápidas
+- OAuth2 es sobre **autorización** (qué puede hacer una app en tu nombre); OpenID Connect agrega **autenticación** (quién sos) encima — confundir ambos es un error común de entrevista.
+- "Resource Server" (tu API validando tokens de un Auth Server externo) es distinto de implementar tu propio login — muchas apps empresariales solo necesitan ser Resource Server, no Authorization Server completo.
+- Keycloak es la opción open-source más común para tener un Authorization Server propio sin depender de Google/Auth0 — común en empresas que necesitan control total de identidad.
+- El flujo Client Credentials (sin usuario) es el que se usa para comunicación machine-to-machine entre microservicios, distinto del Authorization Code que es para apps con usuario humano de por medio.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

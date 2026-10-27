@@ -37,3 +37,9 @@ Modelar usuarios, productos, pedidos y pagos con reglas reales de negocio.
 - [ ] Las transacciones estan en casos de uso.
 - [ ] Hay migraciones.
 - [ ] Hay tests de integracion con TestContainers.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -162,3 +162,13 @@ management.endpoint.health.show-details=always
 ```
 
 ## 📌 Notas Rápidas
+- `@ConfigurationProperties` es preferible a múltiples `@Value` sueltos — agrupa configuración relacionada, es type-safe, y falla en build/arranque si el tipo no coincide (con el annotation processor de config metadata).
+- `spring.jpa.open-in-view=false` es una de las properties más importantes en producción: por defecto está en `true` y mantiene la sesión de Hibernate abierta durante toda la request, lo cual esconde problemas de N+1 hasta que llegan a producción con carga real.
+- Las variables de entorno siempre le ganan a los archivos `.properties` en la jerarquía de prioridad — es la forma estándar de inyectar config específica de cada ambiente sin tocar el código ni el JAR.
+- `application.yml` es más legible para configuración anidada (varios niveles), pero es sensible a la indentación — un error de espacios rompe el parseo silenciosamente distinto a un typo en `.properties`.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

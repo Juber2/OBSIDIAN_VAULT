@@ -132,3 +132,13 @@ try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
 > Si usas `ThreadLocal` intensivamente con millones de virtual threads, el consumo de memoria puede ser alto. Considera `ScopedValue` (Java 21 Preview).
 
 ## 📌 Notas Rápidas
+- No usar un pool para Virtual Threads (`newVirtualThreadPerTaskExecutor()` crea uno nuevo por tarea, no reutiliza) — el modelo mental es distinto al de platform threads, donde sí importa limitar el pool.
+- Habilitar `spring.threads.virtual.enabled=true` en Spring Boot 3.2+ cambia el executor de Tomcat, sin tocar el código de los controllers — es prácticamente "gratis" para apps IO-bound.
+- No resuelven cuellos de botella de CPU ni de la base de datos — si el límite real es el pool de conexiones a la BD o el CPU, Virtual Threads no lo arregla por sí solo.
+- Es la respuesta directa de Java al problema que motivó los frameworks reactivos (WebFlux, Mutiny en Quarkus) — con Virtual Threads se puede escribir código bloqueante simple y aun así escalar a alta concurrencia.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -333,3 +333,13 @@ public Long extractUserId(String token) {
 > Access token: 15 min — 1 hora. Refresh token: 7 — 30 días.
 
 ## 📌 Notas Rápidas
+- JWT es stateless por diseño — eso es lo que lo hace escalable horizontalmente (cualquier instancia puede validar el token sin consultar estado compartido), pero también lo que hace difícil invalidarlo antes de su expiración.
+- Access token corto + refresh token largo es el patrón estándar que balancea seguridad (ventana de exposición chica si se roba el access token) con UX (no forzar re-login constante).
+- El payload del JWT es legible por cualquiera (solo Base64, no cifrado) — la firma garantiza integridad (que no fue alterado), no confidencialidad del contenido.
+- Guardar refresh tokens en base de datos (no solo confiar en el JWT) permite revocarlos explícitamente — algo que un JWT de un solo uso no puede hacer por sí mismo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

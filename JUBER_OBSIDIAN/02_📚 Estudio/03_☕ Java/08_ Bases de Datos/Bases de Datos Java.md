@@ -29,3 +29,11 @@ Dominar persistencia en Java mas alla del CRUD: SQL, transacciones, indices, mig
 - [ ] Puedo leer un plan de ejecucion basico.
 - [ ] Versiono cambios de esquema.
 - [ ] Se cuando usar JPA y cuando SQL directo.
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Bases de Datos]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

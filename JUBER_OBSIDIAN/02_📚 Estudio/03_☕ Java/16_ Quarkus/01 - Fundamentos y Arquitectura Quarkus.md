@@ -64,3 +64,9 @@ Live reload real: cambiás código Java y el navegador/cliente ve el cambio sin 
 - [ ] Creé un proyecto Quarkus y usé `quarkus:dev`.
 - [ ] Sé agregar extensions y verificar cuáles están activas en la Dev UI.
 - [ ] Distingo JVM mode de Native mode y sé cuándo conviene cada uno.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

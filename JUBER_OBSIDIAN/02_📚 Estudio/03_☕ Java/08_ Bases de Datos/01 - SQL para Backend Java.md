@@ -45,3 +45,9 @@ WHERE o.status = 'PAID';
 - [ ] Entiendo diferencia entre `WHERE` y `HAVING`.
 - [ ] Uso paginacion.
 - [ ] Evito traer columnas innecesarias.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

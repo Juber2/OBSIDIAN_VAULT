@@ -94,4 +94,35 @@ for (int i = 0; i < 10; i++) {
 
 ## ⚠️ Errores Comunes
 
+> [!warning] Olvidar `break` en switch clásico
+> Sin `break`, la ejecución "cae" (fall-through) al siguiente `case`.
+> ```java
+> switch (dia) {
+>     case 1:
+>         System.out.println("Lunes");
+>         // falta break — también imprime "Martes"
+>     case 2:
+>         System.out.println("Martes");
+> }
+> ```
+
+> [!warning] Bucle infinito por condición mal actualizada
+> ```java
+> int i = 0;
+> while (i < 5) {
+>     System.out.println(i);
+>     // falta i++  → bucle infinito
+> }
+> ```
+
 ## 📌 Notas Rápidas
+- El `switch` moderno (`->`) no necesita `break` y no tiene fall-through — más seguro que el clásico.
+- `do-while` siempre ejecuta al menos una vez, incluso si la condición es falsa desde el inicio.
+- `continue` salta a la siguiente iteración; `break` corta el bucle completo.
+- Con bucles anidados, se puede usar una etiqueta (`etiqueta: for(...)`) + `break etiqueta;` para salir del bucle externo.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

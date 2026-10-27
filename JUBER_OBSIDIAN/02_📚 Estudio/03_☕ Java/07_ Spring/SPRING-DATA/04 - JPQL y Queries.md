@@ -140,3 +140,13 @@ Optional<Usuario> findByEmailActivo(@Param("email") String email);
 ```
 
 ## 📌 Notas Rápidas
+- JPQL opera sobre **entidades y campos Java**, no tablas y columnas SQL — un error común de quien recién llega de SQL puro es escribir el nombre de la tabla en vez del nombre de la clase.
+- Specifications son la forma type-safe y componible de armar filtros dinámicos (ej. un buscador con muchos campos opcionales) — evita el patrón frágil de concatenar strings SQL/JPQL a mano.
+- Criteria API es más verboso que JPQL pero permite construir queries completamente en runtime cuando ni siquiera Specifications alcanza (casos muy dinámicos).
+- Named Queries se validan al arrancar la aplicación (fail-fast) porque están asociadas a la entidad, a diferencia de un `@Query` con JPQL en texto libre en el repositorio, que igual se valida pero está menos centralizado.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

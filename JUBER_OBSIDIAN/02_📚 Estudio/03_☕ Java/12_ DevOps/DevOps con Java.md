@@ -32,3 +32,11 @@ Aprender a construir, empaquetar, desplegar y operar aplicaciones Java en ambien
 - [ ] Tengo pipeline con build, test y package.
 - [ ] Expongo health checks y metricas.
 - [ ] Puedo diagnosticar errores en runtime.
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - DevOps]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

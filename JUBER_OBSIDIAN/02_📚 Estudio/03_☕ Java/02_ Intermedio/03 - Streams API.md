@@ -185,3 +185,13 @@ IntStream.range(1, 5)
 > Solo conviene en colecciones grandes y operaciones costosas. En operaciones simples, el overhead de paralelismo lo hace más lento.
 
 ## 📌 Notas Rápidas
+- Los streams son "lazy": las operaciones intermedias (`map`, `filter`) no se ejecutan hasta que hay una operación terminal (`collect`, `forEach`, `count`).
+- `Collectors.groupingBy()` es de los más usados en backends para agrupar resultados de queries en memoria.
+- `.map()` transforma 1 a 1; `.flatMap()` "aplana" streams anidados (útil cuando cada elemento produce a su vez una colección).
+- Preferir streams para expresar transformaciones declarativas, pero un `for` clásico sigue siendo más legible (y a veces más rápido) para lógica simple.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

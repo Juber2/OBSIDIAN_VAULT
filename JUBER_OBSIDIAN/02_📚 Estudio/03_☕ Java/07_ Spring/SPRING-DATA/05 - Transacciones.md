@@ -148,3 +148,13 @@ public class UsuarioService {
 > Solución: inyectar el propio servicio o mover a otra clase.
 
 ## 📌 Notas Rápidas
+- `REQUIRES_NEW` es clave para casos como logs de auditoría: si la transacción principal falla y hace rollback, el registro de auditoría en su propia transacción independiente sobrevive.
+- Por defecto Spring solo hace rollback en `RuntimeException`/`Error` — con checked exceptions hay que declarar `rollbackFor` explícitamente, una trampa clásica de entrevista.
+- `@Transactional(readOnly = true)` no es solo documentación: Hibernate puede saltarse el dirty checking y optimizar el flush, mejorando performance real en consultas de solo lectura.
+- El "self-invocation problem" (`metodoA()` llamando a `metodoB()` de la misma clase sin pasar por el proxy) es el mismo fenómeno que afecta a `@Transactional`, `@Cacheable`, `@Async` y `@CircuitBreaker` — todos dependen de proxies de Spring AOP (ver [[09 - Proxy]]).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

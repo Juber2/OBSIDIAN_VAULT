@@ -111,3 +111,13 @@ public class LoggingServicioUsuario implements ServicioUsuario {
 | Acoplado a jerarquía | Composición flexible |
 
 ## 📌 Notas Rápidas
+- Las clases `InputStream`/`OutputStream` del propio JDK (`BufferedInputStream`, `GZIPOutputStream`) son el ejemplo canónico de Decorator — se envuelven unas a otras para ir sumando comportamiento.
+- En Spring, AOP (`@Aspect`, `@Transactional`, `@Cacheable`) logra el mismo efecto que un Decorator manual, pero generado por proxies dinámicos en vez de escribir clases wrapper a mano.
+- "Composición sobre herencia" es la frase clave que resume por qué existe este patrón — evita una explosión combinatoria de subclases para cada combinación posible.
+- El orden de envoltura importa: `new ConAzucar(new ConLeche(cafe))` no es lo mismo que `new ConLeche(new ConAzucar(cafe))` si el costo o la lógica dependen del orden.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

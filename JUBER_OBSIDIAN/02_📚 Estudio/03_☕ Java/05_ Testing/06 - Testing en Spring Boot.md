@@ -144,3 +144,13 @@ logging.level.org.springframework=WARN
 ```
 
 ## 📌 Notas Rápidas
+- Elegir el slice más chico posible (`@WebMvcTest`, `@DataJpaTest`) en vez de `@SpringBootTest` por defecto — reduce drásticamente el tiempo de la suite completa a medida que el proyecto crece.
+- `@MockBean` reemplaza un bean real en el contexto de Spring por un mock — distinto de `@Mock` de Mockito puro, que no interactúa con el contexto de Spring en absoluto.
+- `@WithMockUser` simula un usuario autenticado sin necesitar generar un JWT real — suficiente para testear autorización a nivel de roles en la capa web.
+- Un `application-test.properties` separado (con H2 o config mínima) evita que los tests dependan accidentalmente de configuración de dev/prod.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

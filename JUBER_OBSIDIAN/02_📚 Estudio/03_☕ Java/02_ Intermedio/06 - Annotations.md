@@ -126,3 +126,13 @@ if (metodo.isAnnotationPresent(Auditable.class)) {
 > Sin esto, la anotación no estará disponible en runtime y no podrás leerla con Reflection.
 
 ## 📌 Notas Rápidas
+- `@Retention` define hasta cuándo "vive" la anotación: `SOURCE` (solo compilación), `CLASS` (en el .class, no en runtime), `RUNTIME` (accesible por Reflection).
+- `@Target` restringe dónde se puede aplicar (`TYPE`, `METHOD`, `FIELD`, etc.) — evita usos incorrectos en compile-time.
+- Frameworks como Spring/Hibernate dependen fuertemente de anotaciones `RUNTIME` + Reflection para su "magia" (DI, mapeo ORM).
+- Las meta-anotaciones (anotaciones sobre anotaciones) permiten crear anotaciones compuestas, como hace Spring con `@RestController` (que combina `@Controller` + `@ResponseBody`).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

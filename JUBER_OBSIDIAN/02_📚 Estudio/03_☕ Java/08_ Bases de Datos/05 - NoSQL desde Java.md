@@ -145,3 +145,9 @@ mongoTemplate.execute(session -> {
 - [ ] Sé crear índices simples y compuestos, y explicar por qué importan igual que en SQL.
 - [ ] Sé cuándo NoSQL sí soporta transacciones y cuál es el trade-off de usarlas.
 - [ ] Elijo SQL vs NoSQL por patrón de acceso, no por moda.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

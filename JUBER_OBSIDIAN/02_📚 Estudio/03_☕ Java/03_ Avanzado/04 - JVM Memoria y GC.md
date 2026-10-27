@@ -142,3 +142,13 @@ public class Cache {
 > Para aplicaciones web con Spring Boot: `-Xms256m -Xmx512m` como punto de partida, ajustar según profiling real.
 
 ## 📌 Notas Rápidas
+- El heap se divide en generaciones (Young/Eden + Survivor, Old/Tenured) — la mayoría de los objetos mueren jóvenes, por eso el GC generacional es eficiente (recolecta Young con más frecuencia y más barato).
+- G1GC es el recolector default desde Java 9 — buen balance para la mayoría de apps; ZGC/Shenandoah son opciones de baja latencia para heaps muy grandes.
+- Un `OutOfMemoryError` no siempre es "falta de RAM" — puede ser un memory leak (referencias que nunca se liberan, ej. listeners no removidos, caches sin límite).
+- `-Xms` fija el heap inicial, `-Xmx` el máximo — igualarlos evita que la JVM tenga que redimensionar el heap en caliente, a costa de reservar más memoria desde el arranque.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

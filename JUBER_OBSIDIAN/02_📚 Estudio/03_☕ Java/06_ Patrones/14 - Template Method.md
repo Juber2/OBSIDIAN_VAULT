@@ -133,3 +133,13 @@ new ProcesoImportacion().importar(
 | Clase abstracta | Interfaz / lambda |
 
 ## 📌 Notas Rápidas
+- El método template se declara `final` a propósito — evita que una subclase rompa el orden/estructura del algoritmo, solo puede modificar los pasos habilitados.
+- Los "hooks" (métodos con implementación default que las subclases pueden opcionalmente sobrescribir) dan flexibilidad sin obligar a implementar todo.
+- `JdbcTemplate` de Spring es un ejemplo real del nombre: fija el algoritmo (abrir conexión, ejecutar, mapear resultado, cerrar) y deja que vos definas solo la query y el mapeo.
+- Requiere herencia, lo que lo hace más rígido que Strategy — si el algoritmo necesita cambiar completamente (no solo un paso), Strategy es la opción más flexible.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

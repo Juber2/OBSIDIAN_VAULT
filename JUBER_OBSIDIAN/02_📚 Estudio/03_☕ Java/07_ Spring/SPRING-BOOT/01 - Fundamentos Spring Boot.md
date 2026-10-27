@@ -131,3 +131,13 @@ java -jar mi-app.jar --server.port=9090
 ```
 
 ## 📌 Notas Rápidas
+- `@SpringBootApplication` es azúcar sintáctico sobre 3 anotaciones — saber cuáles son ayuda a entender qué hace realmente el arranque de la app.
+- Auto-configuration se puede excluir explícitamente si genera conflicto: `@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)`.
+- El servidor embebido (Tomcat por defecto) es lo que permite `java -jar app.jar` sin necesitar instalar un servidor aparte — clave para contenedores Docker.
+- `ApplicationReadyEvent` es el punto seguro para ejecutar lógica de arranque que dependa de que TODO el contexto ya esté listo (mejor que `@PostConstruct` para tareas que dependen de otros beans).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

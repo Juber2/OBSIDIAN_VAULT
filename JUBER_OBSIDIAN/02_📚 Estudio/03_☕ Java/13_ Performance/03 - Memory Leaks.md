@@ -48,3 +48,9 @@ Cache<String, User> cache = Caffeine.newBuilder()
 - [ ] Identifico dominator objects.
 - [ ] Busco colecciones que crecen sin limite.
 - [ ] Limpio ThreadLocal en finally si aplica.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

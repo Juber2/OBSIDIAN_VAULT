@@ -92,3 +92,13 @@ public void setNombre(String nombre) {
 > ```
 
 ## 📌 Notas Rápidas
+- `this` referencia la instancia actual — útil para distinguir un atributo de un parámetro con el mismo nombre.
+- Si no se define ningún constructor, Java genera uno vacío automáticamente; en cuanto definís uno propio, ese default desaparece.
+- Los atributos `static` pertenecen a la clase, no a cada instancia — se comparten entre todos los objetos.
+- Encapsular con `private` + getters/setters no es solo "buena práctica" — protege invariantes (ej. validar antes de asignar).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

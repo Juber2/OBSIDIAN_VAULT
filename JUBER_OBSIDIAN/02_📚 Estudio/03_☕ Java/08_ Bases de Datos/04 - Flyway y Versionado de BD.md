@@ -43,3 +43,9 @@ CREATE TABLE users (
 - [ ] La app arranca contra una BD vacia.
 - [ ] No uso `ddl-auto=update` en produccion.
 - [ ] Los scripts son idempotentes cuando aplica.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

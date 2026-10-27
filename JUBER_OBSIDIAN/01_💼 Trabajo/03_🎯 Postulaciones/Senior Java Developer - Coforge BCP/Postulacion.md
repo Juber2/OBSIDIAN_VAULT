@@ -43,7 +43,7 @@ Java, Spring, Quarkus, Microservicios, REST/RESTful, Docker, Kubernetes, Azure, 
 ## Verificación honesta (2026-08-12)
 Antes de dar por cerrado esto, releí el contenido real (no solo el índice/checklist) de cada nota marcada 🟢:
 - ❌ **NoSQL** estaba mal marcada — la nota original era genérica (47 líneas) y no mencionaba ACID/BASE ni índices, que el puesto pide textual. **Corregido.**
-- 🟡 **Java base** (`01_Fundamentos`, `02_Intermedio`, `03_Avanzado`): el contenido SÍ existe y tiene ejemplos de código reales, pero varias notas tienen secciones de plantilla vacías (`⚠️ Errores Comunes`, `📌 Notas Rápidas`) sin completar. No bloquea entrevista pero no está 100% pulido — pendiente de revisión manual, no lo re-escribí completo porque no es contenido nuevo del puesto, es contenido preexistente tuyo.
+- ✅ **Java base** (`01_Fundamentos`, `02_Intermedio`, `03_Avanzado`): completado 2026-08-12. Las 28 notas tenían "📌 Notas Rápidas" vacía y 4 también "⚠️ Errores Comunes" vacía — se llenaron todas con contenido real (tips, gotchas, warnings con código).
 - Todo lo demás (Kubernetes, Azure/AKS, SAGA/Cache Aside, Swagger, Docker, Spring, Quarkus) lo escribí yo en esta sesión con profundidad completa, así que no tenía el mismo riesgo de estar "a medias".
 
 ## Requisitos deseables
@@ -65,6 +65,26 @@ Antes de dar por cerrado esto, releí el contenido real (no solo el índice/chec
 
 ## Siguiente paso real
 Todo el contenido está armado. Ahora toca **estudiarlo y practicar** — no queda más para "crear", queda para "aprender". Sugerencia: repasar 1-2 notas por día, y para cada requisito indispensable poder explicarlo en voz alta sin mirar la nota antes de postular.
+
+## Preguntas reales de entrevista (referencia de un postulante, 2026-08-12)
+El usuario compartió temas que le preguntaron a otro candidato para este mismo tipo de puesto. Cruzados contra el vault:
+
+| Tema preguntado | Estado |
+|---|---|
+| SAGA | 🟢 [[ARQUITECTURA]] |
+| Arquitectura Hexagonal | 🟢 ya existía [[03 - Arquitectura Hexagonal]], + resumen agregado en [[ARQUITECTURA]] |
+| Arquitectura en Capas | 🟢 agregada en [[ARQUITECTURA]] (no existía explícita) |
+| Circuit Breaker | 🟢 ya existía, completé Notas Rápidas |
+| Factory, Singleton, Strategy | 🟢 ya existían en [[Patrones de Diseño]] (15 patrones GoF completos), completé Notas Rápidas en los 15 |
+| Repository (pattern) | 🟢 ya cubierto vía [[03 - Repositorios]] (Spring Data) |
+| Lombok | 🟢 nota nueva [[06 - Lombok]] (no existía) |
+| Quarkus | 🟢 [[Quarkus]] |
+| JPA | 🟢 [[01 - JPA e Hibernate]] |
+| Spring Boot | 🟢 [[Spring Boot]] |
+| Kafka | 🟢 [[01 - Kafka Fundamentos]], [[02 - Kafka con Spring Boot]] |
+| Redis | 🟢 [[05 - Cache con Redis y Caffeine]] |
+
+**Actualización 2026-08-12 (tarde):** completado también el resto del vault de Java a pedido del usuario. Las 46 notas restantes de Build Tools, Testing, Spring Boot/Core/Data/Security, Mensajería (Kafka/RabbitMQ) y Microservicios ya tienen "Notas Rápidas" con contenido real. Verificado con script: **0 notas vacías en toda la carpeta `03_☕ Java`.**
 
 ## Checklist antes de postular
 - [ ] Cubrir los 12 requisitos indispensables al menos a nivel "puedo hablar de esto con confianza en entrevista".

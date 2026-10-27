@@ -146,3 +146,13 @@ public class GlobalExceptionHandler {
 ```
 
 ## 📌 Notas Rápidas
+- El `DispatcherServlet` es un único punto de entrada (Front Controller pattern) — todas las requests HTTP pasan por él antes de llegar al controller correspondiente.
+- `HandlerInterceptor` es más liviano que un `@Aspect` para casos puramente relacionados a HTTP (logging de requests, chequeos previos) — no requiere AOP, es parte nativa de Spring MVC.
+- Content negotiation por header `Accept` permite que la misma API sirva JSON o XML sin duplicar controllers — en la práctica la gran mayoría de APIs modernas solo soportan JSON.
+- Spring MVC es el modelo tradicional basado en Servlet (bloqueante); WebFlux es la alternativa reactiva no bloqueante — elegir según si la app necesita alta concurrencia con I/O intensivo (ver también Virtual Threads como alternativa más simple, [[08 - Virtual Threads]]).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

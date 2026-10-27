@@ -133,3 +133,9 @@ Importante: algunos bugs (reflection no declarada, etc.) **solo aparecen en el b
 - [ ] Sé mockear beans con `@InjectMock`.
 - [ ] Uso Dev Services/Testcontainers para no depender de infraestructura externa en tests.
 - [ ] Corro al menos los tests críticos contra el binario nativo (`@QuarkusIntegrationTest`) antes de un release.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

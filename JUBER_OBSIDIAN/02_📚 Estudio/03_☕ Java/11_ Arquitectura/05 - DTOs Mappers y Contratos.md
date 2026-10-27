@@ -59,3 +59,9 @@ MapStruct sirve cuando hay muchos mapeos repetitivos. Para dominios con reglas d
 - [ ] No uso el mismo DTO para request y response si tienen reglas distintas.
 - [ ] Valido entrada en la frontera.
 - [ ] Mantengo versionados los contratos importantes.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

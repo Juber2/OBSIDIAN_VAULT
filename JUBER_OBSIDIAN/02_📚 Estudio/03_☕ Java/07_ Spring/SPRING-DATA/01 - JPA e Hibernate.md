@@ -165,3 +165,13 @@ public class PagoEfectivo extends Pago {
 > Nunca usar en prod. Usar `validate` o `none`. Las migraciones se hacen con Flyway/Liquibase.
 
 ## 📌 Notas Rápidas
+- JPA es la especificación (Jakarta), Hibernate es la implementación — igual que la relación entre JAX-RS y RESTEasy en Quarkus ([[04 - REST con RESTEasy Reactive]]).
+- El estado "Managed" es lo que habilita **dirty checking**: modificar un campo de una entidad managed dentro de una transacción activa la actualiza en BD sin necesitar `save()` explícito.
+- `GenerationType.IDENTITY` no permite batch inserts eficientes (Hibernate necesita el ID antes de poder batchear) — `SEQUENCE` es mejor opción si el volumen de inserts es alto.
+- `ddl-auto=validate` en producción es la opción segura: falla el arranque si el schema no coincide con las entidades, en vez de modificar la BD silenciosamente.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

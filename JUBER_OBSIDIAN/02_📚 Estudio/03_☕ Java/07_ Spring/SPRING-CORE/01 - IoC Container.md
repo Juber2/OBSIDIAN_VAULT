@@ -116,3 +116,13 @@ public class ConexionDB {
 > [!tip] Siempre usar `ApplicationContext`. `BeanFactory` es raramente necesario.
 
 ## 📌 Notas Rápidas
+- IoC es el principio general; DI (Dependency Injection) es la técnica más común para implementarlo — en la práctica se usan casi como sinónimos en Spring.
+- `ApplicationContext` es eager por defecto (crea todos los singletons al arrancar) — esto hace que errores de configuración se detecten al inicio, no en medio de producción.
+- Las anotaciones estereotipo (`@Service`, `@Repository`, `@Controller`) son semánticamente `@Component` con significado adicional — `@Repository` además traduce excepciones de persistencia a `DataAccessException` de Spring.
+- `@PostConstruct`/`@PreDestroy` son estándar Jakarta, no específicos de Spring — funcionan igual en cualquier framework que los soporte.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

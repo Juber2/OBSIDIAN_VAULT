@@ -136,3 +136,9 @@ Por default, `swagger-ui` solo está disponible en Dev Mode — en producción h
 - [ ] Sé configurar seguridad JWT en la documentación.
 - [ ] Entiendo la diferencia de comportamiento por-ambiente entre Quarkus y Spring Boot en este tema.
 - [ ] Puedo explicar en entrevista la equivalencia conceptual entre ambos enfoques (mismo estándar OpenAPI, distinta implementación).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -21,7 +21,16 @@ Prerequisitos: Java Intermedio, Patrones de Diseño
 | 3 | Beans y Scopes | ⬜ | [[03 - Beans y Scopes]] |
 | 4 | AOP | ⬜ | [[04 - AOP]] |
 | 5 | Spring MVC | ⬜ | [[05 - Spring MVC]] |
+| 6 | Lombok | ⬜ | [[06 - Lombok]] |
 
 ## 🔗 Relaciones
-- **Prerequisitos**: [[Inyección de Dependencias]], [[Patrones de Diseño]]
+- **Prerequisitos**: [[02 - DI en Spring]], [[Patrones de Diseño]]
 - **Siguiente paso**: [[Spring Boot]]
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Spring]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

@@ -181,3 +181,13 @@ management:
 > No definir versiones individuales de cada módulo Spring Cloud. El BOM asegura compatibilidad entre todos los módulos.
 
 ## 📌 Notas Rápidas
+- Spring Cloud es un paraguas de proyectos independientes (Gateway, Eureka, Config, OpenFeign) — no hace falta usarlos todos juntos, se eligen según lo que el sistema realmente necesita.
+- El BOM `spring-cloud-dependencies` resuelve el problema de compatibilidad entre módulos — mezclar versiones sueltas de cada componente es una fuente clásica de errores difíciles de diagnosticar.
+- En Kubernetes, buena parte de lo que resuelve Spring Cloud (Service Discovery, Config, Load Balancing) ya lo da la plataforma nativamente — vale la pena evaluar si conviene duplicar esa responsabilidad en la capa de aplicación.
+- `fail-fast: true` en la config del Config Server es preferible en producción — mejor que la app no arranque a que arranque con configuración incompleta/desactualizada.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

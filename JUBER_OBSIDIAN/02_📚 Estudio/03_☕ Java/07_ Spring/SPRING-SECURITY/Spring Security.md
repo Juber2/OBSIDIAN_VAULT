@@ -76,3 +76,11 @@ Controller / 403 Forbidden
 
 > [!warning] Solo agregar la dependencia activa protección total
 > Todos los endpoints quedan protegidos automáticamente. Necesitas configurar para abrir los que quieras públicos.
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Spring]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

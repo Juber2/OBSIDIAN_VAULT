@@ -157,3 +157,13 @@ mvn package -P prod  # activar perfil prod
 > Usar `mvn dependency:tree` para detectar versiones conflictivas. Resolver con `<exclusions>` o `<dependencyManagement>`.
 
 ## 📌 Notas Rápidas
+- El orden de fases es acumulativo: `mvn install` ejecuta también `validate`, `compile`, `test`, `package` y `verify` antes.
+- `<dependencyManagement>` centraliza versiones sin agregar la dependencia directamente — los módulos hijos heredan la versión sin repetirla (clave en proyectos multi-módulo).
+- El repositorio local (`~/.m2/repository`) cachea todo lo descargado — borrar una dependencia corrupta de ahí suele resolver errores raros de build.
+- `spring-boot-starter-parent` como `<parent>` da versiones de dependencias ya probadas juntas (BOM) — evita el infierno de versiones incompatibles entre sí.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

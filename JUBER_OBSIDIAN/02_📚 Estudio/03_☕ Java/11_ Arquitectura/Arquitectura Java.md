@@ -35,3 +35,11 @@ Aprender a disenar aplicaciones Java mantenibles, testeables y listas para crece
 - [ ] Diseno casos de uso con entradas y salidas claras.
 - [ ] Puedo explicar por que una solucion es monolito, modular o microservicio.
 - [ ] Documento decisiones importantes con ADR.
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Arquitectura]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

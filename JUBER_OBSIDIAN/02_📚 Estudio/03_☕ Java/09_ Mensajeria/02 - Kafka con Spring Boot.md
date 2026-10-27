@@ -300,3 +300,13 @@ class OrderEventIntegrationTest {
 ```
 
 ## 📌 Notas Rápidas
+- `enable-auto-commit: false` + ACK manual es la configuración recomendada en producción — el auto-commit por tiempo puede confirmar offsets de mensajes que en realidad fallaron a mitad de procesamiento.
+- Un Dead Letter Topic (DLT) evita que un mensaje "envenenado" (que siempre falla) bloquee el consumo del resto de la partición reintentando infinitamente.
+- `@Transactional` de Spring + `kafkaTemplate.executeInTransaction` permite unir una escritura a base de datos y un envío a Kafka como una sola unidad atómica — clave para no perder consistencia entre el estado guardado y el evento publicado.
+- `EmbeddedKafka` levanta un broker en memoria para tests — alternativa más rápida a TestContainers cuando no hace falta un broker 100% real, aunque TestContainers da más fidelidad.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

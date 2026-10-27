@@ -155,3 +155,13 @@ public ErrorResponse handleNotFound(NotFoundException ex, HttpServletRequest req
 ```
 
 ## 📌 Notas Rápidas
+- Usar records para DTOs es el estándar moderno — inmutables, sin boilerplate, con `equals`/`toString` generados automáticamente por el lenguaje.
+- MapStruct genera el código de mapeo en compile-time (como Lombok) — más rápido en runtime que usar Reflection manual o librerías tipo ModelMapper.
+- `@JsonInclude(NON_NULL)` a nivel global evita mandar campos `null` innecesarios en las respuestas, reduciendo el tamaño del payload.
+- Nunca serializar una entidad JPA directamente como response — además del problema de exponer campos internos, puede disparar lazy loading fuera de una transacción activa (`LazyInitializationException`).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

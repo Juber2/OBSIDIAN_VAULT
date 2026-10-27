@@ -6,7 +6,20 @@ Creado: 2026-05-21
 Relacionado:
   - Java
 ---
-
+microservicios
+quarkus935790476
+webflux
+patrones
+arquitectura
+resiliencia
+mongo
+redis
+sql server
+azure aks blob storage apim
+jubernetes pds service deploy
+grafana
+micrometer
+kibana
 # Bases java
 
 Nota base para conceptos generales del ecosistema Java.
@@ -34,3 +47,9 @@ Nota base para conceptos generales del ecosistema Java.
 - [ ] Entiendo diferencia entre JDK, JRE y JVM.
 - [ ] Puedo compilar y ejecutar Java desde terminal.
 - [ ] Entiendo que Maven/Gradle gestionan dependencias y ciclo de build.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

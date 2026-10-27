@@ -73,4 +73,33 @@ public int sumar(int a, int b, int c) { return a + b + c; }
 
 ## ⚠️ Errores Comunes
 
+> [!warning] Sobrecarga ambigua
+> Si dos métodos sobrecargados pueden aplicar igual de bien a una llamada, el compilador falla en vez de "adivinar".
+> ```java
+> void metodo(int a, long b) {}
+> void metodo(long a, int b) {}
+> metodo(1, 2); // ❌ ambiguo, no compila
+> ```
+
+> [!warning] Java pasa por valor, incluso para objetos
+> Se pasa la copia de la **referencia**, no el objeto. Podés mutar el objeto apuntado, pero reasignar el parámetro dentro del método no afecta la variable original.
+> ```java
+> void reasignar(StringBuilder sb) {
+>     sb = new StringBuilder("nuevo"); // no afecta al caller
+> }
+> void mutar(StringBuilder sb) {
+>     sb.append("!"); // SÍ afecta al caller (mismo objeto)
+> }
+> ```
+
 ## 📌 Notas Rápidas
+- La sobrecarga (overloading) se resuelve en compile-time; el override (herencia) se resuelve en runtime.
+- Un método `static` no puede acceder a atributos/métodos de instancia sin una referencia explícita al objeto.
+- Los parámetros varargs (`int... nums`) se tratan como un array dentro del método.
+- Un método puede tener como máximo un parámetro varargs, y debe ser el último de la lista.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

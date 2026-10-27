@@ -47,6 +47,9 @@ Prerequisitos: JVM y JDK
 | 8   | Arrays y Colecciones          | ⬜      | [[08 - Arrays y Colecciones]]                 |
 | 9   | Excepciones                   | ⬜      | [[09 - Excepciones]]                          |
 | 10  | Strings y Utilidades          | ⬜      | [[10 - Strings y Utilidades]]                 |
+| 11  | Wrappers y Autoboxing 🆕      | ⬜      | [[11 - Wrappers y Autoboxing]]                |
+| 12  | static y final 🆕             | ⬜      | [[12 - static y final]]                       |
+| 13  | Clases anidadas e internas 🆕 | ⬜      | [[13 - Clases Anidadas e Internas]]           |
 
 ## 💻 Ejercicios y Práctica
 
@@ -69,7 +72,7 @@ Prerequisitos: JVM y JDK
 
 ## 🔗 Relaciones
 - **Prerequisitos**: [[Bases java]]
-- **Se conecta con**: [[NET]], [[POO]]
+- **Se conecta con**: [[NET]], [[05 - POO - Clases y Objetos]]
 - **Siguiente paso**: Java Intermedio
 
 ## 📌 Notas Rápidas
@@ -78,3 +81,11 @@ Prerequisitos: JVM y JDK
 ## 🎓 Proyecto Final
 
 **Estado**: ⬜ No iniciado | 🔄 En progreso | ✅ Completado
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Fundamentos]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

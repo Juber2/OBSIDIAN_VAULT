@@ -27,3 +27,11 @@ Aprender a medir, diagnosticar y mejorar aplicaciones Java sin optimizar a ciega
 ## Regla de oro
 
 Primero mide. Luego formula hipotesis. Despues cambia una cosa y vuelve a medir.
+
+---
+
+## ✍️ Mis apuntes
+> 📓 Apuntes del módulo → [[Apuntes - Performance]]
+
+<!-- Anotaciones rápidas sobre el módulo en general -->
+

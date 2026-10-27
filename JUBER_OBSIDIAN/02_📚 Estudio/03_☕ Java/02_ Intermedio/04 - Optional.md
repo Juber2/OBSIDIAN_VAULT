@@ -119,3 +119,13 @@ public String obtenerNombreUsuario(Long id) {
 > ```
 
 ## 📌 Notas Rápidas
+- `Optional` está pensado como **tipo de retorno**, no como tipo de parámetro ni de campo de clase.
+- `orElseGet(() -> ...)` difiere el cálculo del default (lazy); `orElse(valor)` siempre lo evalúa, incluso si no hace falta.
+- `orElseThrow()` sin argumento lanza `NoSuchElementException`; con argumento (`orElseThrow(MiExcepcion::new)`) lanza la excepción indicada.
+- `map()` sobre un Optional vacío simplemente no ejecuta la función y devuelve `Optional.empty()` — encadenable sin checks manuales de null.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

@@ -142,3 +142,9 @@ Los scripts van en `src/main/resources/db/migration/V1__init.sql` — igual conv
 - [ ] Sé escribir queries con Panache (`list`, `find`, paginación, ordenamiento).
 - [ ] Uso `@Transactional` correctamente en operaciones multi-paso.
 - [ ] Sé configurar migraciones con Flyway en Quarkus.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

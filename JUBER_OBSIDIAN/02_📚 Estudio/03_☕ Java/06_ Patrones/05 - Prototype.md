@@ -88,3 +88,13 @@ public class Perfil {
 | Seguridad | Cambios en uno afectan al otro | Completamente independientes |
 
 ## 📌 Notas Rápidas
+- `Cloneable` es una interfaz "marcadora" (sin métodos) — sin implementarla, `Object.clone()` lanza `CloneNotSupportedException`, un diseño criticado del propio JDK.
+- En Java moderno, un copy constructor o un método factory de copia (sin `Cloneable`) suele ser más limpio y explícito que usar `clone()`.
+- Records (Java 16+) simplifican mucho este patrón para DTOs inmutables: crear una copia con un campo cambiado es trivial con un constructor compacto o un método `with...`.
+- Poco usado como patrón "puro" en backends modernos — más relevante el concepto de shallow vs deep copy, que sí aparece seguido (ej. copiar una entidad JPA con sus colecciones).
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

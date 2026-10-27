@@ -46,3 +46,9 @@ docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE=dev mi-api:1.0.0
 - [ ] El contenedor arranca sin depender del IDE.
 - [ ] El puerto esta documentado.
 - [ ] No hay credenciales hardcodeadas.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

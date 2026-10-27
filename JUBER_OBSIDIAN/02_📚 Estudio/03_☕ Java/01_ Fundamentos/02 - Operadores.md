@@ -73,3 +73,13 @@ String resultado = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
 > ```
 
 ## 📌 Notas Rápidas
+- El operador ternario (`? :`) es una expresión, no una sentencia — se puede asignar directo a una variable.
+- `&&` y `||` son "short-circuit": si el resultado ya se sabe, no evalúan el segundo operando.
+- `&` y `|` sobre booleanos SÍ evalúan ambos lados siempre (sin short-circuit) — poco usado, pero puede causar bugs si se confunde con `&&`/`||`.
+- `%` (módulo) funciona también con decimales en Java, no solo enteros.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

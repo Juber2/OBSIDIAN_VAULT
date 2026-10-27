@@ -108,3 +108,13 @@ public class PasarelaPagoAdapter implements PasarelaPago {
 ```
 
 ## 📌 Notas Rápidas
+- Muy común en integraciones reales: envolver un SDK de terceros (pasarela de pago, servicio legado) detrás de una interfaz propia, para no acoplar todo el dominio a la API externa.
+- Si mañana cambia el proveedor, solo se reescribe el Adapter — el resto de la app ni se entera.
+- Se relaciona directo con Arquitectura Hexagonal: los adaptadores de esa arquitectura son literalmente este patrón aplicado a nivel de toda la app (puertos = interfaces, adaptadores = implementaciones que traducen).
+- No confundir con Facade: Adapter traduce una interfaz existente a otra que el cliente espera; Facade simplifica un subsistema complejo sin necesariamente "traducir" nada.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

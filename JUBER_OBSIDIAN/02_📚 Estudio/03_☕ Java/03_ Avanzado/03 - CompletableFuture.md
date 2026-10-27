@@ -148,3 +148,13 @@ cf.join();  // lanza unchecked CompletionException — más cómodo en streams
 > Sin `exceptionally` o `handle`, una excepción en la cadena se silencia hasta que llamas `get()`.
 
 ## 📌 Notas Rápidas
+- `thenApply` transforma el resultado (síncrono); `thenCompose` encadena otro `CompletableFuture` (evita futuros anidados, equivalente a `flatMap`).
+- `thenCombine` une los resultados de dos `CompletableFuture` independientes que corrieron en paralelo.
+- Sin especificar un executor, las callbacks corren en el `ForkJoinPool.commonPool()` compartido por toda la JVM — para trabajo pesado, pasar un `Executor` propio (`thenApplyAsync(fn, executor)`).
+- Es la base conceptual de la programación reactiva en Java (y de `Uni`/`Multi` en Quarkus, ver [[04 - REST con RESTEasy Reactive]]) — encadenar sin bloquear en vez de esperar resultados secuencialmente.
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+

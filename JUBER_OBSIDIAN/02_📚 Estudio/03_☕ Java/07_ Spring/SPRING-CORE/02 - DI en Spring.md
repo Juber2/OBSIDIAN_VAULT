@@ -133,3 +133,13 @@ public class ServiceA {
 ```
 
 ## 📌 Notas Rápidas
+- Constructor injection es la única forma que permite campos `final` y detecta dependencias circulares en el arranque — por eso es la recomendada, no field injection.
+- Con Lombok, `@RequiredArgsConstructor` genera el constructor automáticamente sobre campos `final` — combinación estándar en Spring moderno (ver [[06 - Lombok]]).
+- Una dependencia circular casi siempre es señal de mal diseño (dos servicios que se necesitan mutuamente) — `@Lazy` es un parche, no una solución; lo correcto suele ser extraer la lógica compartida a un tercer servicio.
+- `@Qualifier` + múltiples `@Component` con nombre es el equivalente Spring de resolver ambigüedad, similar a `@Primary`/`@Alternative` en CDI (Quarkus) — ver [[03 - CDI e Inyeccion de Dependencias]].
+
+---
+
+## ✍️ Mis apuntes
+<!-- Tus dudas, ejemplos propios, cómo lo aplicaste -->
+
